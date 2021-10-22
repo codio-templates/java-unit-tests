@@ -10,7 +10,6 @@
    "text": "A <<<class>>> is the blueprint used to create object.\nAn <<<object>>> a version of a class used by programmers.\nAn object is said to be an <<<instance>>> of a class.\n<<<Instantiation>>> is when an object is created from a class.",
    "distractors": "",
    "guidance": "A class is the blueprint used to create object.\nAn object a version of a class used by programmers.\nAn object is said to be an instance of a class.\nInstantiation is when an object is created from a class.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -65,6 +64,9 @@
      " is when an object is created from a class."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -100,7 +102,6 @@
     }
    ],
    "guidance": "When instantiating an object, you start by giving the object a type. In this case, the type is `Pitcher`. Give the object a name followed by the assignment operator. Use the `new` keyword and the class name to create a new object of type `Pitcher`.\n\n```java\nPitcher pedro = new Pitcher();\n```\n\nTo access a class attribute, use dot notation. That means using the object's name (`pedro`) followed by a `.`, and the use the name of the attribute. Assign the value `2.93` to the attribute like you would a variable.\n\n```java\npedro.era = 2.93;\n```",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -136,7 +137,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify how to instantiate an object and modify an attribute"
+   "learningObjectives": "SWBAT identify how to instantiate an object and modify an attribute",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -171,7 +175,6 @@
     }
    ],
    "guidance": "In Java, the constructor uses the name of the class (capitalization must match) and a set of parentheses. Since the class is `Dog`, the constructor would be:\n\n```java\nDog()\n```\n\nThe constructor does not use the keyword `class`. In addition, the spelling of the constructor must match that of the class. Since the class starts with a `D`, so must the constructor.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -207,7 +210,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify the constructor"
+   "learningObjectives": "SWBAT identify the constructor",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -237,7 +243,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nPerson(int age, String homeTown)\n```\n\nEach parameter for the constructor requires a type. In addition, the order of the parameters is important. Since the object instantiation had `18` before `\"Dallas\"`, the constructor must do the same.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -273,7 +278,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify the constructor based on object instatiation"
+   "learningObjectives": "SWBAT identify the constructor based on object instatiation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -287,7 +295,6 @@
    "text": "A <<<class>>> attribute is an attribute whose value is shared by all instances of a class.\nAn <<<object>>> attribute is an attribute whose value is independent of other instances of a class.",
    "distractors": "variable\nconstant",
    "guidance": "A class attribute is an attribute whose value is shared by all instances of a class.\nAn object attribute is an attribute whose value is independent of other instances of a class.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -336,6 +343,9 @@
      " attribute is an attribute whose value is independent of other instances of a class."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -350,7 +360,6 @@
    "text": "A <<<deep>>> copy is when Java makes a copy of the object and its attributes.\nA <<<shallow>>> copy is when Java makes a copy of the object, but the attributes are shared.",
    "distractors": "small\nmedium\nfake",
    "guidance": "A deep copy is when Java makes a copy of the object and its attributes.\nA shallow copy is when Java makes a copy of the object, but the attributes are shared.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -399,6 +408,9 @@
      " copy is when Java makes a copy of the object, but the attributes are shared."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -413,7 +425,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\nclass Dog {\n  String breed;\n}\n```\n\n* In the given code, no arguments were passed to `Dog` when `fido` was instantiated. There should be no constructor.\n* The given code set the value for `breed`, so `breed` should not be given a default value when initialized.\n* In the given code, the `Dog` class uses a capital `D`, so should the class definition.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -439,7 +450,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT declare a class"
+   "learningObjectives": "SWBAT declare a class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -474,7 +488,6 @@
     }
    ],
    "guidance": "All of the statements are true. \n* The copy constructor is used to make a deep copy. \n* Shallow copies only make a copy of the object, but not of the attributes.\n* Deep copes make a copy of the object and the attributes.\n* Changing an attribute of one shallow copy will affect the attribute of the other shallow copy.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -502,7 +515,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT differentiate between shallow and deep copies"
+   "learningObjectives": "SWBAT differentiate between shallow and deep copies",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -516,7 +532,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 40,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass PracticeClass {\n  String date;\n}\n  \n//add class definitions above this line\n\npublic class Exercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the class `PracticeClass`. Then create the object attribute `date` of type `String`. ",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -550,7 +565,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class without a constructor"
+   "learningObjectives": "SWBAT create a class without a constructor",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -565,7 +583,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Cat {\n  String breed;\n  String color;\n  String name;\n  \n  public Cat() {\n    breed = \"american shorthair\";\n    color = \"black\";\n    name = \"kiwi\";\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the class `Cat`, then instantiate the string variables, `breed`, `color`, and `name`. Then create the constructor, but do not pass any parameters to it. Finally, set the values of the object attributes to be `\"american shorthair\"`, `\"black\"`, and `\"kiwi\"` respectively.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -599,7 +616,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class with a constructor"
+   "learningObjectives": "SWBAT create a class with a constructor",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -614,7 +634,6 @@
    "arePartialPointsAllowed": false,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Superhero {\n  String name;\n  String secretIdentity;\n  String[] powers;\n  \n  public Superhero(String n, String s, String[] p) {\n    name = n;\n    secretIdentity = s;\n    powers = p;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n\n\n    //add code above this line\n  }\n}\n```\n\nStart by declaring the `Superhero` class. The constructor should include parameters that represent `name`, `secretIdentity`, and`powers`. Be sure to keep the parameters in this order; otherwise your code will not pass the automated tests. Set the value of each attribute to its matching parameter. ",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -648,7 +667,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class with a constructor and parameters"
+   "learningObjectives": "SWBAT create a class with a constructor and parameters",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -663,7 +685,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Observation {\n  String date;\n  double temperature;\n  double elevation;\n  int penguins;\n  double precipitation;\n  \n  public Observation(String d, double t, double e, int p) {\n    date = d;\n    temperature = t;\n    elevation = e;\n    penguins = p;\n    precipitation = 0;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nDeclare the object attributes as instructed by the prompt. Create a constructor with parameters in the order of `date`, `temperature`, `elevation`, and `penguins`. The `precipitation` attribute has a default value, so it does not need to be a parameter of the constructor. Set the value of each attribute to the corresponding parameter. Finally, set the value of `precipitation` to `0`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -697,7 +718,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class with a construction, parameters, and a default value"
+   "learningObjectives": "SWBAT create a class with a construction, parameters, and a default value",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -712,7 +736,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass BigCat {\n  String species;\n  String commonName;\n  String[] habitat;\n  static String genus = \"panthera\";\n  \n  public BigCat(String s, String c, String[] h) {\n    species = s;\n    commonName = c;\n    habitat = h;\n  }\n}\n  \n//add class definitions above this line\n\npublic class Exercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    \n\n    //add code above this line\n  }\n}\n```\n\nCreate the `species`, `commonName` and `habitat` object attributes as instructed by the prompt. The `genus` attribute needs to be a class attribute. That is why the `static` keyword is used. Notice, `genus` is **not** all caps, so do not use the `final` keyword with this attribute. Finally, set the values of the object attributes with the constructor.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -746,7 +769,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT declare a class attribute with the static keyword"
+   "learningObjectives": "SWBAT declare a class attribute with the static keyword",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -781,7 +807,6 @@
     }
    ],
    "guidance": "While there are four object attributes, only three values (`ma`, `mo`, and `y`) are passed as parameters to the constructor. The `color` attribute gets a default value of `\"black\"`.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -818,7 +843,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify parameters passed to the constructor"
+   "learningObjectives": "SWBAT identify parameters passed to the constructor",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -853,7 +881,6 @@
     }
    ],
    "guidance": "Instantiating an object means to create an object based on a class. The class is the blueprint from which objects are made. The act of creating an object based on the class blueprint is called instantiation.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -894,7 +921,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT define object instantiation"
+   "learningObjectives": "SWBAT define object instantiation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -909,7 +939,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible answer:\n\n```java\n//add class definitions below this line\n    \nclass Dog {\n  String name;\n  String breed;\n  \n  public Dog(String n, String b) {\n    name = n;\n    breed = b;\n  }\n  \n  Dog(Dog d) {\n    name = d.name;\n    breed = d.breed;\n  }\n}\n  \n//add class definitions above this line\n\npublic class LabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Dog dog1 = new Dog(\"Marceline\", \"German Shepherd\");\n    Dog dog2 = new Dog(dog1);\n    dog2.name = \"Cajun\";\n    dog2.breed = \"Belgian Malinois\";\n    \n    System.out.println(dog1.name + \" \" + dog1.breed);\n    System.out.println(dog2.name + \" \" + dog2.breed);\n    System.out.println(dog2 == dog1);\n\n    //add code above this line\n  }\n}\n```\n\nTo create a deep copy, you need to use a copy constructor. Create a constructor like before, but pass another `Dog` object as the only parameter. Set the object attributes to that of the parameter using dot notation.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -943,7 +972,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT make a deep copy of an object"
+   "learningObjectives": "SWBAT make a deep copy of an object",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -973,7 +1005,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nJFrame window = new JFrame(\"Photogram\");\n```\n\nJava uses the `new` keyword when instantiating objects.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -1010,7 +1041,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify object instantiation"
+   "learningObjectives": "SWBAT identify object instantiation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1024,7 +1058,6 @@
    "text": "The <<<static>>> keyword is used to denote a class attribute.",
    "distractors": "public\nnew\nprivate",
    "guidance": "The `static` keyword is used to indicate a class attribute.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": false,
@@ -1075,6 +1108,9 @@
      " keyword is used to denote a class attribute."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -1110,7 +1146,6 @@
     }
    ],
    "guidance": "Instance variables are variables created by the constructor. You can think of instance variables as the attributes of an object. Instance variables often store the values passed to the constructor as parameters.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -1151,7 +1186,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT define instance variable"
+   "learningObjectives": "SWBAT define instance variable",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1186,7 +1224,6 @@
     }
    ],
    "guidance": "Object mutability is the concept that values of object attributes can be changed.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -1222,7 +1259,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT define mutability"
+   "learningObjectives": "SWBAT define mutability",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1236,7 +1276,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\npublic static void changeBreed(Dog dog, String newBreed) {\n  dog.breed = newBreed;\n}\n```\n\nThe `changeBreed` method needs to parameters, the `Dog` object being modified and the new breed. That is why the code block `public static void changeBreed() {` is incorrect. The parameter `dog` represents the `Dog` object being modified. To access the `breed` attribute, you first need to reference `dog`. That is why the code blocks `d.breed = newBreed;` and `breed = newBreed;` are incorrect.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -1262,7 +1301,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT construct an external method that modifies an object"
+   "learningObjectives": "SWBAT construct an external method that modifies an object",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1276,7 +1318,6 @@
    "text": "```java\npublic static void levelUp(Player p) {\n  p.<<<level>>> += 1;\n  <<<p>>>.health += 10;\n  <<<p.score>>> += 100;\n}\n```",
    "distractors": "",
    "guidance": "The correct answer is:\n\n```java\npublic static void levelUp(Player p) {\n  p.level += 1;\n  p.health += 10;\n  p.score += 100;\n}\n```\n\nUsing the first line of code, you see that `Player p` is the parameter passed to `levelUp`. Since the level increases by 1, the second blank is `level`. The third blank is `p` since the `health` attribute cannot be accessed without a reference to the `Player` object. The last blank is `p.score` since this is the attribute that increases by 100.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": false,
@@ -1320,6 +1361,9 @@
      " += 100;\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -1334,7 +1378,6 @@
    "text": "An <<<instance method>>> is declared inside of a class.\nAn <<<external method>>> is declared outside of a class.\n<<<External methods and instance methods>>> can modify an object.",
    "distractors": "",
    "guidance": "The correct answers are:\n\nAn instance method is declared inside of a class.\nAn external method is declared outside of a class.\nExternal methods and instance methods can modify an object.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -1386,6 +1429,9 @@
      " can modify an object."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -1400,7 +1446,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\nvoid birthday() {\n  age += 1;\n}\n```\n\n* The instance method `birthday` should not be of type `int` as this method does not return an integer.\n* The instance method `birthday` does not need a parameter, as this method always increases the `age` attribute by 1.\n* The `age` attribute should be increased by 1, not by another integer passed to the `birthday` method.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -1434,7 +1479,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create an instance method"
+   "learningObjectives": "SWBAT create an instance method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1464,7 +1512,6 @@
     }
    ],
    "guidance": "An instance method is a method that is defined within a class. The name `method` is not correct because it does not distinguish if the method was declared inside or outside of a class. While instance methods can be a user-defined method, not all user-defined methods are instance methods. ",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -1500,7 +1547,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT differentiate a instance method from other methods"
+   "learningObjectives": "SWBAT differentiate a instance method from other methods",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1514,7 +1564,6 @@
    "text": "```java\n<<<void>>> printAuthor() {\n  System.out.println(<<<name>>> + \" is known for their book \" + <<<book>>>);\n}\n```",
    "distractors": "String\nauthorName\nfamousBook",
    "guidance": "The correct answer is:\n\n```java\nvoid printAuthor() {\n  System.out.println(name + \" is known for their book \" + book);\n}\n```\n\n* `String` is not correct because the `printAuthor` does not have a return statement, so the return type must be `void`.\n* `authorName` and `famousBook` are not correct because those are the parameter names for the constructor, not the attribute names.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -1566,6 +1615,9 @@
      ");\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -1601,7 +1653,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nmyDog.bark();\n```\n\n* `bark();` is not correct because methods are called with dot notation. Dot notation requires the object name followed by the method name. This code snippet is missing the object name.\n* `myDog.bark(\"Brutus\", \"Pomeranian\");` is not correct because the `bark` method does not take any arguments.\n* `System.out.println(myDog.bark());` is not correct because the `bark` method does not return a value that can be printed.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -1631,7 +1682,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT demonstrate how to call an instance method"
+   "learningObjectives": "SWBAT demonstrate how to call an instance method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1645,7 +1699,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\nvoid hello() {\n  System.out.println(\"Hello, \" + name);\n}\n```\n\n* The `hello` method does not have a `return` statement, so the type is `void` not `String`.\n* `name` is an attribute, so `hello` does not need a parameter; it can already access the attribute.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -1671,7 +1724,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT create an Instance method"
+   "learningObjectives": "SWBAT create an Instance method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1706,7 +1762,6 @@
     }
    ],
    "guidance": "The `static` keyword is used when creating static methods.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -1742,7 +1797,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT recognize keyword needed to create static methods"
+   "learningObjectives": "SWBAT recognize keyword needed to create static methods",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1756,7 +1814,6 @@
    "text": "A <<<static>>> method can be called without instantiating an object.\nAn <<<instance>>> method must instantiate an object before being called.",
    "distractors": "public\nprivate",
    "guidance": "The correct answers are:\n\nA **static** method can be called without instantiating an object.\nAn **instance** method must instantiate an object before being called.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -1805,6 +1862,9 @@
      " method must instantiate an object before being called."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -1820,7 +1880,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CelestialBody {\n  String name;\n  double diameter;\n  long distance;\n  int moons;\n  \n  CelestialBody(String n, double diam, long dist, int m) {\n    name = n;\n    diameter = diam;\n    distance = dist;\n    moons = m;\n  }\n  \n  double comparedToEarth() {\n    double earth = 12765.3;\n    double relativeSize = diameter / earth;\n    return relativeSize;\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n\n    CelestialBody planet = new CelestialBody(\"Jupiter\", 142984, 778360000L, 79);\n    System.out.println(planet.comparedToEarth());\n\n    //add code above this line\n  }\n}\n```\n\n* Move the `comparedToEarth` method inside of the `CelestialBody` class.\n* Remove the `public` and `static` keywords from the method.\n* `comparedToEarth`does not need any parameters since it can directly access the `diameter` attribute.\n* Remove `planet` from `comparedToEarth`. The method no longer has the parameter `planet`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -1855,7 +1914,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT transform an external method to an instance method"
+   "learningObjectives": "SWBAT transform an external method to an instance method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1870,7 +1932,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CelestialBody {\n  String name;\n  double diameter;\n  long distance;\n  int moons;\n  \n  CelestialBody(String n, double diam, long dist, int m) {\n    name = n;\n    diameter = diam;\n    distance = dist;\n    moons = m;\n  }\n  \n  static String closerToSun(CelestialBody b1, CelestialBody b2) {\n    if (b1.distance < b2.distance) {\n      return b1.name;\n    } else {\n      return b2.name;\n    }\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    CelestialBody mercury = new CelestialBody(\"Mercury\", 4879.4, 57909000, 0);\n    CelestialBody venus = new CelestialBody(\"Venus\", 12103.6, 108160000, 0);\n    String closest = CelestialBody.closerToSun(mercury, venus);\n    System.out.println(closest);\n    \n    //add code above this line\n  }\n}\n```\n\n* Static methods require the use of the `static` method.\n* The `closerToSun` method takes two `CelestialBody` objects as parameters.\n* Find the smaller of the two `distance` attributes of the `CelestialBody` objects.\n* Return the `name` attribute of the object that is closest to the sun.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -1905,7 +1966,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a static method"
+   "learningObjectives": "SWBAT create a static method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1920,7 +1984,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\n\n//add class definitions below this line\n\nclass Library {\n  ArrayList<String> available;\n  ArrayList<String> onLoan;\n  \n  Library() {\n    available = new ArrayList<String>();\n    onLoan = new ArrayList<String>();\n  }\n  \n  void addBooks(String[] books) {\n    for (String book : books) {\n      available.add(book);\n    }\n  }\n  \n  void borrowBook(String book) {\n    onLoan.add(book);\n    available.remove(book);\n  }\n  \n  void returnBook(String book) {\n    onLoan.remove(book);\n    available.add(book);\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise4 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    Library myLibrary = new Library();\n    String[] books = {\"Four Seasons\", \"Say Nothing\", \"Milkman\", \"Harry Potter and the Order of the Phoenix\"};\n    myLibrary.addBooks(books);\n    myLibrary.borrowBook(\"Harry Potter and the Order of the Phoenix\");\n    myLibrary.borrowBook(\"Say Nothing\");\n    myLibrary.returnBook(\"Say Nothing\");\n    System.out.println(myLibrary.available);\n    System.out.println(myLibrary.onLoan);  \n\n    //add code above this line\n  }\n}\n```\n\n* The `addBooks` method should iterate over the list of books passed to the method. Each element of the list should be added to the ArrayList attribute `available`. \n* The `borrowBook` method removes the book from the `available` attribute and adds it to the `onLoan` attribute.\n* The `returnBook` method removes the book from the `onLoan` attribute and adds it to the `available` attribute.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -1955,7 +2018,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT to create instance methods"
+   "learningObjectives": "SWBAT to create instance methods",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -1970,7 +2036,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "```java\n  void board(int p) {\n    passengers += p;\n    calculateFares(p);\n  }\n```\nThe `board` method takes an integer of the people boarding the train. This number is added to the `passengers` attribute. Because people pay for the subway when boarding, be sure to call the `calculateFares` method when people are boarding the subway. This will keep track of the total fares.\n\n```java\n  void calculateFares(int p) {\n    totalFares += p * fare;\n  }\n```\nThe `calculateFares` method takes an integer representing the people boarding the subway. Multiply this number by the `fare` attribute and add this to the `totalFares` attribute.\n\n```java\n  void disembark(int p) {\n    if (passengers - p < 0) {\n      passengers = 0;\n    } else {\n      passengers -= p;\n    }\n  }\n```\nThe `disembark` method takes an integer representing the number of people exiting the subway. Remember, there cannot be a negative number of people on board a subway. Check to make sure that the `passengers` attribute minus the number of people disembarking is less than 0. If so, set `passengers` to 0. If not, subtract the people leaving the subway from `passengers`.\n\n```java\n  static void changeFare(double newFare) {\n    fare = newFare;\n  }\n```\nThe `changeFare` method is a `static` method because this method only changes the value of the `static` attribute `fare`. This method takes a double that represents the new fare. This value is assigned to the `fare` attribute.\n\n```java\n  int getIndex(String element) {\n    for (int i = 0; i < stops.length; i++) {\n      if (element.equals(stops[i])) {\n        return i;\n      }\n    }\n    return -1;\n  }\n```\nThis coding exercise does not ask you to make the `getIndex` method. However, this helper method allows us to reuse code instead of writing it multiple times. This method is used for the `distance` and `advance` methods.\n\n```java\n  int distance(String destination) {\n    int currentIndex = getIndex(currentStop);\n    int destinationIndex = getIndex(destination);\n    return Math.abs(destinationIndex - currentIndex);\n  }\n```\nThe `distance` method takes a string that represents the subway stop to which you are going to calculate the distance. We will calculate the distance (number of stops away) by using the index (the attribute `stops` is an array) for the destination and the index of the subway's current stop. Use the helper method `getIndex` to get the index of `currentStop` and the index of `destination`. The difference between these two numbers is the distance. However, we do not want a negative number to represent the difference, so we use the absolute value method (`Math.abs`) to keep the distance positive.\n\n```java\n  void advance() {\n    if (direction.equals(\"south\")) {\n      if (currentStop.equals(\"Kendall\")) {\n        currentStop = \"Central\";\n        direction = \"north\";\n      } else {\n        int currentIndex = getIndex(currentStop);\n        currentStop = stops[currentIndex + 1];\n      }\n    } else if (direction.equals(\"north\")) {\n      if (currentStop.equals(\"Alewife\")) {\n        currentStop = \"Davis\";\n        direction = \"south\";\n      } else {\n        int currentIndex = getIndex(currentStop);\n        currentStop = stops[currentIndex - 1];\n      }\n    }\n  }\n```\nThe `advance` method is the most complex. There are four different scenarios to take into account:\n1) The subway is travelling South and is at the terminus (`\"Kendall\"`). For this scenario, the `currentStop` attribute becomes the previous stop (`\"Central\"`) and the `direction` attribute becomes `\"north\"`. \n1) The subway is traveling South but is not at the terminus. For this scenario, use the `getIndex` helper method to get the index of the subway's current stop. Then update `currentStop` to the next element in the `stops` attribute.\n1) The subway is travelling North and is at the terminus (`\"Alewife\"`). For this scenario, the `currentStop` attribute becomes the next stop (`\"Davis\"`) and the `direction` attribute becomes `\"south\"`.\n1) The subway is travelling North but is not at the terminus. For this scenario, use the `getIndex` helper method to get the index of the subway's current stop. Then update `currentStop` to the previous element in the `stops` attribute.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -2005,7 +2070,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create several instance methods for a given class"
+   "learningObjectives": "SWBAT create several instance methods for a given class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2020,7 +2088,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n  int totalAnimals() {\n    return bigCats + primates + reptiles + birds;\n  }\n```\nThe `totalAnimals` does not have any parameters, and it returns the sum of the `bigCats`, `primates`, `reptiles`, and `birds` attributes.\n\n```java\n  int totalMammals() {\n    return bigCats + primates;\n  }\n```\nThe `totalMammals` method does not have any parameters. Return only the sum of `bigCats` and `primates` attributes. The other animals are not mammals.\n\n```java\n  String mostAnimals() {\n    if (bigCats > primates && bigCats > reptiles && bigCats > birds) {\n      return \"big cats\";\n    } else if (primates > bigCats && primates > reptiles && primates > birds) {\n      return \"primates\";\n    } else if (reptiles > bigCats && reptiles > primates && reptiles > birds) {\n      return \"reptiles\";\n    } else if (birds > bigCats && birds > primates && birds > reptiles) {\n      return \"birds\";\n    } else {\n      return \"There are an equal amount of animals\";\n    }\n  }\n```\nThe `mostAnimals` method does not have any parameters. Use a series of compound conditionals to ask if each attribute is greater than the rest of the attributes. Return a string for the name of the attribute with the most animals.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -2054,7 +2121,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create several instance methods for a class"
+   "learningObjectives": "SWBAT create several instance methods for a class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2068,7 +2138,6 @@
    "text": "```java\n<<<void>>> printCoffee() <<<{>>>\n  System.out.println(\"This coffee comes from \" + <<<country>>> + \".\");\n  System.out.println(\"It was harvested in the \" + <<<region>>> + \" region.\");\n}\n```",
    "distractors": "",
    "guidance": "The correct answer is:\n\n```java\nvoid printCoffee() {\n  System.out.println(\"This coffee comes from \" + country + \".\");\n  System.out.println(\"It was harvested in the \" + region + \" region.\");\n}\n```\n\nThis method does not have a `return` statement, so it needs to be of type `void`. Curly brackets are used to mark the beginning and end of the code in a method. The second print statement is `region` since the word \"region\" appears in the text. That means the first print statement uses `country`.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -2128,6 +2197,9 @@
      " + \" region.\");\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -2143,7 +2215,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Mass {\n  double milligrams;\n  double grams;\n  double kilograms;\n  \n  Mass(int mg, int g, int kg) {\n    milligrams = mg;\n    grams = g;\n    kilograms = kg;\n  }\n  \n  double totalWeight() {\n    double tw = kilograms * 1000 + grams + milligrams / 1000;\n    return tw;\n  }\n  \n  static double combinedWeight(Mass m1, Mass m2) {\n    return m1.totalWeight() + m2.totalWeight();\n  }\n  \n  static String heavier(Mass m1, Mass m2) {\n    double mass1 = m1.totalWeight();\n    double mass2 = m2.totalWeight();\n    if (mass1 > mass2) {\n      return \"The first object is heavier\";\n    } else if (mass2 > mass1) {\n      return \"The second object is heavier\";\n    } else {\n      return \"The two objects weigh the same\";\n    }\n  }\n  \n  static double averageWeight(Mass m1, Mass m2) {\n    return combinedWeight(m1, m2) / 2;\n  }\n}\n \n//add class definitions above this line\n```\n\nThe `totalWeight` method is a helper method and needs direct access to the instance attributes of a `Mass` object. Static methods cannot directly access instance attributes, so `totalWeight` cannot be a static method. For all of the other methods, add the `static` keyword. Each method takes two `Mass` objects as parameters. Be sure that each static methods references both of these arguments (`m1` and `m2` in the example above) when calling the `totalWeight` method or calling the `combinedWeight` method.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -2178,7 +2249,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT to transform an instance method into a static method."
+   "learningObjectives": "SWBAT to transform an instance method into a static method.",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2192,7 +2266,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer:\n\n```java\nvoid addCity(String city) {\n  cities.add(city);\n}\n```\n\n* You are asked to make an instance method, not a static method. That is why `static void addCity(String city) {` is not correct.\n* `cities` is the ArrayList attribute, not `city`. That is why `city.add(cities);` is not correct.\n* The `addCity` method takes the name of a city as a parameter, which is a string. That is why `void addCity(int city) {` is not correct.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -2224,7 +2297,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create an instance method"
+   "learningObjectives": "SWBAT create an instance method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2238,7 +2314,6 @@
    "text": "<<<sit()>>> is an instance method.\n<<<bark()>>> is a static method.",
    "distractors": "",
    "guidance": "The correct answer is:\n\n`sit()` is an instance method.\n`bark()` is a static method.\n\nOnly static method can be called from the class (`Dog.bark()`). Therefore, `sit()` must be an instance method",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -2278,6 +2353,9 @@
      " is a static method."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -2313,7 +2391,6 @@
     }
    ],
    "guidance": "Static methods are not allowed to directly access instance attributes. Either the method needs to be an instance method (remove the `static` keyword), or you need to pass a `SmartPhone` object to `describe` and access the attributes via the argument.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2341,7 +2418,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT recognize that static methods cannot directly access instance attributes"
+   "learningObjectives": "SWBAT recognize that static methods cannot directly access instance attributes",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2376,7 +2456,6 @@
     }
    ],
    "guidance": "There is no keyword used when creating an instance method. A static method uses the `static` keyword, but there is no keyword to designate an instance method.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2410,7 +2489,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify the lack of keyword used to declare an instance method."
+   "learningObjectives": "SWBAT identify the lack of keyword used to declare an instance method.",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2440,7 +2522,6 @@
     }
    ],
    "guidance": "There are two main ideas behind encapsulation: grouping together related data and restricting this data. Each idea on its own can be an example of encapsulation. However, the best definition is one that includes grouping the data and restricting the data.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2476,7 +2557,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT define encapsulation"
+   "learningObjectives": "SWBAT define encapsulation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2506,7 +2590,6 @@
     }
    ],
    "guidance": "Constructors and methods should make use of the `public` access modifier. Not every method will be public, but encapsulation requires that some methods be public. As a general rule, all attributes should be private even though Java allows for public attributes.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2542,7 +2625,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify what parts of their program should be public."
+   "learningObjectives": "SWBAT identify what parts of their program should be public.",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2577,7 +2663,6 @@
     }
    ],
    "guidance": "## True Statements\n* The statement `All attributes should be private` is true because encapsulation dictates that access to attributes should be restricted.\n* The statement `Some methods should be private while others public` is true because encapsulation says to restrict access with private methods. However, if all methods are private then the user could not call them. Therefore you need a mix of private and public methods.\n\n## False Statements\n* The statement `It is impossible to access private attributes and methods` is false because public methods can invoke private attributes and methods.\n* The statement `Methods called by the user should be private` is false because methods called by the user need to be public.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2613,7 +2698,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT recognize true statements about the private access modifier"
+   "learningObjectives": "SWBAT recognize true statements about the private access modifier",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2643,7 +2731,6 @@
     }
    ],
    "guidance": "The best definition is:\n\n> When users know how to interact with the code, but they do not understand the inner workings of the code.\n\nA key part of code as a black box is that users do not need to understand the inner workings of the code. However, users are expected to use black box code, so they need to understand how to interact with it. While the `private` keyword is used to hide code from the user, simply using `private` does not create a black box. A black box is the result of careful planning — hiding everything that should not be directly accessed while making certain methods public.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2679,7 +2766,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT define black box code"
+   "learningObjectives": "SWBAT define black box code",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2709,7 +2799,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n>Everything is private. There is no way to instantiate a `Dog` object or call the `bark` method.\n\nEncapsulation is the practice of hiding and exposing information to the user. As written, the `Dog` class cannot be instantiated because the constructor is private. Even if this were public, the user could not call the `bark` method. Encapsulation means using both the `public` and `private` access modifiers.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2737,7 +2826,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify incorrect encapsulation"
+   "learningObjectives": "SWBAT identify incorrect encapsulation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2751,7 +2843,6 @@
    "text": "The constructor should be <<<public>>>.\nInstance attributes should be <<<private>>>.\nMethods should be <<<public and private>>>.",
    "distractors": "",
    "guidance": "Here are the correct answers:\n\n* Constructors should be public. If not, you cannot instantiate an object.\n* The convention in Java is to always make instance attributes private.\n* Methods need to be both public and private. Only those methods need by the user should be public; the rest should be private.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": false,
@@ -2795,6 +2886,9 @@
      "."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -2809,7 +2903,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\npublic String[] getLanguages() {\n  return languages;\n}\n```\n\n* Getter methods are accessible to the user, so they need to have the `public` access modifier. \n* The convention in Java is to start a getter method with the word `get`. Java would not throw an error if the method is named `returnLanguages`, but best practices say to use `getLanguages`.\n* A getter method should do only one thing, return the value of an attribute. Printing should not be done by a getter method.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -2843,7 +2936,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a getter method"
+   "learningObjectives": "SWBAT create a getter method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2857,7 +2953,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\npublic void setLanguages(String[] newLanguages) {\n  languages = newLanguages;\n}\n```\n\n* Setter methods do not return a value, so their type should be `void`.\n* Setter methods update an attribute to a new value, so they require a parameter that represents this new value.\n* Setter methods need to be public so they can be called by users of the class.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -2891,7 +2986,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a setter method"
+   "learningObjectives": "SWBAT create a setter method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2926,7 +3024,6 @@
     }
    ],
    "guidance": "The true statements are:\n\n>Data validation is done in a setter method\nData validation is important because the Java compiler cannot find all errors\n\n* The job of a getter method is to return the value of an attribute. These methods should never update the value of an attribute, so data validation should not be done in a getter method.\n* The Java compiler will find some kinds of errors like incorrect data types. However, the compiler does not understand the context of the code. Data validation is the process of making sure a value is appropriate for its intended use.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -2962,7 +3059,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify true statements about data validation"
+   "learningObjectives": "SWBAT identify true statements about data validation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -2976,7 +3076,6 @@
    "text": "A <<<getter>>> accesses the value of a private instance variable.\nA <<<setter>>> mutates the value of a private instance variable.",
    "distractors": "",
    "guidance": "A **getter** accesses the value of a private instance variable.\nA **setter** mutates the value of a private instance variable.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -3017,6 +3116,9 @@
      " mutates the value of a private instance variable."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -3031,7 +3133,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\npublic void setColor(String newColor) {\n  String[] primaryColors = {\"red\", \"blue\", \"yellow\"};\n  for (String color : primaryColors) {\n    if (newColor.equals(color)) {\n      color = newColor;\n    }\n  }\n}\n```\n\n* Setter methods should start with `set` which is why `public void getColor(String newColor) {` is incorrect.\n* String comparison is done with the `equals` method, which is why `if (newColor == color) {` is incorrect.\n* This method should update the `color` attribute, which is why `newColor = color;` is incorrect.\n",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3057,7 +3158,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT construct a setter with data validation"
+   "learningObjectives": "SWBAT construct a setter with data validation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3071,7 +3175,6 @@
    "text": "The <<<private>>> access modifier means that an instance cannot directly access an attribute or method.\nThe <<<public>>> access modifier means that an instance can directly access an attribute or method.\nThe <<<default>>> access modifier is assumed when no modifier is used before an attribute or method.",
    "distractors": "",
    "guidance": "* The `private` access modifier means an instance cannot directly access an attribute or method. Instead, you have to use a public method (like a getter or a setter) to access private attributes or private methods.\n* The `public` access modifier means that an instance can directly access or modify the attribute or method.\n* If you do not use an access modifier, Java assumes the `default` access modifier, which is similar to `public`.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -3123,6 +3226,9 @@
      " access modifier is assumed when no modifier is used before an attribute or method."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -3153,7 +3259,6 @@
     }
    ],
    "guidance": "The `color` attribute is private which means an instance cannot access or modify it. Java would throw an error message.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3189,7 +3294,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT predict output from code"
+   "learningObjectives": "SWBAT predict output from code",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3224,7 +3332,6 @@
     }
    ],
    "guidance": "The correct answers are:\n\n```\nThe setter method only works with integers\nThe setter method only works with even numbers\n```\n\nThe method header for `setAttribute` requires that an integer be passed to the method. It does not work with any other data type. The `%` operator is modulus which returns the remainder from `newNumber` and `2`. If the parameter is even (no remainder when divided by 2) then the `number` attribute will take a new value.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3260,7 +3367,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT understand how data is being validated"
+   "learningObjectives": "SWBAT understand how data is being validated",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3290,7 +3400,6 @@
     }
    ],
    "guidance": "The code will print `blue`. The convention is to name the getter and setter `getColor` and `setColor`. However, Java will not throw an error message if this convention is ignored.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3331,7 +3440,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify naming conventions for getters and setters"
+   "learningObjectives": "SWBAT identify naming conventions for getters and setters",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3346,7 +3458,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Person {\n  private String name;\n  private int age;\n  private String occupation;\n  \n  public Person(String n, int a, String o) {\n    name = n;\n    age = a;\n    occupation = o;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String newName) {\n    name = newName;\n  }\n  \n  public int getAge() {\n    return age;\n  }\n  \n  public void setAge(int newAge) {\n    age = newAge;\n  }\n  \n  public String getOccupation() {\n    return occupation;\n  }\n  \n  public void setOccupation(String newOccupation) {\n    occupation = newOccupation;\n  }\n}\n  \n//add class definitions above this line\n\npublic class EncapsulationLabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Person myPerson = new Person(\"Citra Curie\", 16, \"student\");\n    \n    System.out.println(myPerson.getName());\n    myPerson.setName(\"Roman Faraday\");\n    System.out.println(myPerson.getName());\n    \n    System.out.println(myPerson.getAge());\n    myPerson.setAge(18);\n    System.out.println(myPerson.getAge());\n    \n    System.out.println(myPerson.getOccupation());\n    myPerson.setOccupation(\"plumber\");\n    System.out.println(myPerson.getOccupation());\n\n    //add code above this line\n  }\n}\n```\n\n* Be sure to use the `private` access modifier for the `name`, `age`, and `occupation` attributes.\n* Follow the naming conventions for the getters and setters in the **Expected Output** section.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3381,7 +3492,10 @@
     ]
    },
    "bloomsObjectiveLevel": "5",
-   "learningObjectives": "SWBAT create a class that makes use of getters and setters"
+   "learningObjectives": "SWBAT create a class that makes use of getters and setters",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3396,7 +3510,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Fruit {\n  private String name;\n  private String color;\n  \n  public Fruit(String n, String c) {\n    name = n;\n    color = c;\n  }\n  \n  public String getName() {\n    return name;\n  }\n  \n  public void setName(String newName) {\n    name = newName;\n  }\n  \n  public String getColor() {\n    return color;\n  }\n  \n  public void setColor(String newColor) {\n    color = newColor;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Fruit myFruit = new Fruit(\"strawberry\", \"red\");\n    \n    System.out.println(myFruit.getName());\n    System.out.println(myFruit.getColor());\n    \n    myFruit.setName(\"tangerine\");\n    myFruit.setColor(\"orange\");\n    System.out.println(myFruit.getName());\n    System.out.println(myFruit.getColor());\n\n    //add code above this line\n  }\n}\n```\n* All attributes should be private\n* The constructor should be public\n* Create a getter and setter for each attribute so that you can access and change them",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3430,7 +3543,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT convert a class with the default access modifier to a class with encapsulation"
+   "learningObjectives": "SWBAT convert a class with the default access modifier to a class with encapsulation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3445,7 +3561,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Watch {\n  private String manufacturer;\n  private String model;\n  private int diameter;\n  private int waterResistance;\n  private String material;\n  \n  public Watch (String ma, String mo, int d, int wr, String mat) {\n    manufacturer = ma;\n    model = mo;\n    diameter = d;\n    waterResistance = wr;\n    material = mat;\n  }\n  \n  public String getManufacturer() {\n    return manufacturer;\n  }\n  \n  public void setManufacturer(String newManufacturer) {\n    manufacturer = newManufacturer;\n  }\n  \n  public String getModel() {\n    return model;\n  }\n  \n  public void setModel(String newModel) {\n    model = newModel;\n  }\n  \n  public int getDiameter() {\n    return diameter;\n  }\n  \n  public void setDiameter(int newDiameter) {\n    diameter = newDiameter;\n  }\n  \n  public int getWaterResistance() {\n    return waterResistance;\n  }\n  \n  public void setWaterResistance(int newWaterResistance) {\n    waterResistance = newWaterResistance;\n  }\n  \n  public String getMaterial() {\n    return material;\n  }\n  \n  public void setMaterial(String newMaterial) {\n    material = newMaterial;\n  }\n  \n  public String summary() {\n    String summary = \"\";\n    summary += \"Manufacturer: \" + capitalize(manufacturer) + \"\\n\";\n    summary += \"Model: \" + capitalize(model) + \"\\n\";\n    summary += \"Diameter: \" + diameter + \" mm\\n\";\n    summary += \"Water Resistance: \" + waterResistance + \" m\\n\";\n    summary += \"Material: \" + capitalize(material);\n    return summary;\n  }\n  \n  private String capitalize(String s) {\n    String capitalizedString = \"\";\n    capitalizedString += s.substring(0, 1).toUpperCase();\n    capitalizedString += s.substring(1);\n    return capitalizedString;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Watch myWatch = new Watch(\"omega\", \"speedmaster\", 42, 50, \"steel\");\n    System.out.println(myWatch.summary());\n\n    //add code above this line\n  }\n}\n```\n\n* All of the attributes should be private\n* Create getters and setters for each of the attributes\n* The summary method needs to return a multiline string. Start with an empty string and then concatenate each line to the string followed by a newline character. There should **not** be a newline character on the last line of the string.\n* The string attributes need to have an uppercase first letter. This task is done in its own private method. Pass in the lowercase string and return a string with the first letter capitalized. Start with an empty string. Use the `substring` to get the first character of the string (`substring(0, 1)`) and capitalize it. Concatenate this to the empty string. Then get the remainder of the string (`substring(1)`) and concatenate this to the string with the capital letter.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3479,7 +3594,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class with encapsulation, getters, setters, and a public method"
+   "learningObjectives": "SWBAT create a class with encapsulation, getters, setters, and a public method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3494,7 +3612,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Song {\n  private String artist;\n  private String title;\n  private String album;\n  private int playCount;\n  private final double payRate;\n  private double moneyEarned;\n  \n  public Song(String ar, String t, String al, double p) {\n    artist = ar;\n    title = t;\n    album = al;\n    playCount = 0;\n    payRate = p;\n    moneyEarned = 0;\n  }\n  \n  public String getArtist() {\n    return artist;\n  }\n  \n  public void setArtist(String newArtist) {\n    artist = newArtist;\n  }\n  \n  public String getTitle() {\n    return title;\n  }\n  \n  public void setTitle(String newTitle) {\n    title = newTitle;\n  }\n  \n  public String getAlbum() {\n    return album;\n  }\n  \n  public void setAlbum(String newAlbum) {\n    album = newAlbum;\n  }\n  \n  public int getPlayCount() {\n    return playCount;\n  }\n  \n  public void setPlayCount(int newPlayCount) {\n    playCount = newPlayCount;\n  }\n  \n  public double getMoneyEarned() {\n    return moneyEarned;\n  }\n  \n  public double getPayRate() {\n    return payRate;\n  }\n  \n  public void play() {\n    updatePlayCount();\n    updateMoneyEarned();\n  }\n  \n  private void updatePlayCount() {\n    playCount++;\n  }\n  \n  private void updateMoneyEarned() {\n    moneyEarned = playCount * payRate;\n  }\n  \n}\n  \n//add class definitions above this line\n\npublic class CodingExercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Song mySong = new Song(\"led zeppelin\", \"ten years gone\", \"physical graffiti\", 0.001);\n    mySong.play();\n    System.out.println(mySong.getMoneyEarned());\n    for (int i = 0; i < 10000; i++) {\n      mySong.play();\n    }\n    System.out.println(mySong.getMoneyEarned());\n\n    //add code above this line\n  }\n}\n```\n\n* All of the attributes should be private\n* Because the `payRate` attribute is a constant, use the `final` keyword when declaring the attribute\n* The attributes `playCount` and `moneyEarned` should be set to 0 in the constructor\n* All of the attributes should have a getter method\n* All of the attributes **except for** `payRate` and `moneyEarned` should have a setter method\n* In this example, the `play` method calls two private helper methods, `updatePlayCount` and `updateMoneyEarned`\n* `updatePlayCount` increments the `playCount` method by 1\n* `updateMoneyEarned` updates `moneyEarned` to `payRate` multiplied by `playCount`",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3528,7 +3645,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class with encapsulation, specifically getters, setters, and access modifiers"
+   "learningObjectives": "SWBAT create a class with encapsulation, specifically getters, setters, and access modifiers",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3543,7 +3663,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass Atm {\n  private double money;\n  \n  public Atm(double m) {\n    money = m;\n  }\n  \n  public double getMoney() {\n    return money;\n  }\n  \n  public void withdraw(double amount) {\n    if (haveEnoughMoney(amount)) {\n      if (positiveMoney(amount)) {\n         money -= amount;\n      } else {\n        System.out.println(\"You cannot withdraw a negative amount of money.\");\n      }\n    } else {\n      System.out.println(\"You do not have enough funds to withdraw that amount.\");\n    }\n  }\n  \n  public void deposit(double amount) {\n    if (positiveMoney(amount)) {\n      money += amount;\n    } else {\n      System.out.println(\"You cannot deposit a negative amount of money.\");\n    }\n  }\n  \n  private boolean haveEnoughMoney(double amount) {\n    return money > amount;\n  }\n  \n  private boolean positiveMoney(double amount) {\n    return amount >= 0;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Atm myAtm = new Atm(1000);\n    myAtm.deposit(50);\n    System.out.println(myAtm.getMoney());\n    myAtm.withdraw(925);\n    System.out.println(myAtm.getMoney());    \n\n    //add code above this line\n  }\n}\n```\n\n* The only attribute should be `money`\n* `money` has a getter method, but no setter\n* The `withdraw` method needs to test for two different conditions: the amount to be withdrawn is less than the money in the account, and the money to be withdrawn is positive\n* The private method `positiveMoney` asks if the amount of money is positive and returns a boolean value\n* The private method `haveEnoughMoney` asks if the amount of money to be withdrawn is greater than the money in the account and returns a boolean value\n* Data validation for the `deposit` method also uses the `positiveMoney` helper method",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3577,7 +3696,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT to create a class with encapsulation and data validation"
+   "learningObjectives": "SWBAT to create a class with encapsulation and data validation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3592,7 +3714,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n    \nclass SodaMachine {\n  private String[] sodas = {\"coke\", \"pepsi\", \"sprite\", \"dr. pepper\"};\n  private int cokeInventory;\n  private int pepsiInventory;\n  private int spriteInventory;\n  private int drPepperInventory;\n  private int money;\n    \n  public SodaMachine() {\n    cokeInventory = 20;\n    pepsiInventory = 20;\n    spriteInventory = 20;\n    drPepperInventory = 20;\n    money = 10;\n  }\n  \n  public String[] getSodas() {\n    return sodas;\n  }\n  \n  public void setSodas(int index, String newSoda) {\n    sodas[index] = newSoda;\n  }\n  \n  public int getCokeInventory() {\n    return cokeInventory;\n  }\n  \n  public void setCokeInventory(int newInventory){\n    cokeInventory = newInventory;\n  }\n  \n  public int getPepsiInventory() {\n    return pepsiInventory;\n  }\n  \n  public void setPepsiInventory(int newInventory){\n    pepsiInventory = newInventory;\n  }\n  \n  public int getSpriteInventory() {\n    return spriteInventory;\n  }\n  \n  public void setSpriteInventory(int newInventory){\n    spriteInventory = newInventory;\n  }\n  \n  public int getDrPepperInventory() {\n    return drPepperInventory;\n  }\n  \n  public void setDrPepperInventory(int newInventory){\n    drPepperInventory = newInventory;\n  }\n  \n  public int getMoney() {\n    return money;\n  }\n  \n  public void setMoney(int newMoney){\n    money = newMoney;\n  }\n  \n  public void buySoda(String soda, int amount) {\n    if (validSoda(soda) && enoughSoda(soda) && enoughMoney(amount)) {\n      updateInventory(soda);\n      updateMoney();\n    }\n  }\n  \n  private boolean validSoda(String soda) {\n    boolean correctSoda = false;\n    \n    for (String s : sodas) {\n      if (soda.equals(s)) {\n        correctSoda = true;\n      }\n    }\n    \n    if (correctSoda == false) {\n      System.out.println(\"That soda is not sold in this machine.\");\n    }\n    return correctSoda;\n  }\n  \n  private boolean enoughMoney(int amount) {\n    if (amount >= 2) {\n      return true;\n    } else {\n      System.out.println(\"You did not insert enough money.\");\n      return false;\n    }\n  }\n  \n  private boolean enoughSoda(String soda) {\n    if (soda.equals(\"coke\")) {\n      if (cokeInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Coke.\");\n        return false;\n      }\n    } else if (soda.equals(\"sprite\")) {\n      if (spriteInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Sprite.\");\n        return false;\n      }\n    } else if (soda.equals(\"pepsi\")) {\n      if (pepsiInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Pepsi.\");\n        return false;\n      }\n    } else if (soda.equals(\"dr. pepper\")) {\n      if (drPepperInventory > 0) {\n        return true;\n      } else {\n        System.out.println(\"There are no cans of Dr. Pepper.\");\n        return false;\n      }\n    }\n    return false;\n  }\n  \n  private void updateInventory(String soda) {\n    if (soda.equals(\"coke\")) {\n      cokeInventory--;\n    } else if (soda.equals(\"sprite\")) {\n      spriteInventory--;\n    } else if (soda.equals(\"pepsi\")) {\n      pepsiInventory--;\n    } else if (soda.equals(\"dr. pepper\")) {\n      drPepperInventory--;\n    }\n  }\n  \n  private void updateMoney() {\n    money += 2;\n  }\n}\n  \n//add class definitions above this line\n\npublic class CodingExercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    SodaMachine myMachine = new SodaMachine();\n    myMachine.buySoda(\"coke\", 4);\n    System.out.println(myMachine.getMoney());\n    System.out.println(myMachine.getCokeInventory());\n\n    //add code above this line\n  }\n}\n```\n\n* Make all attributes private.\n* The constructor does not have any parameters. The initial values were discussed in the list at the top of the page.\n* Create getters and setters for each attribute. These methods follow Java naming conventions. The setter for the `sodas` attribute requires an index and the name of a new soda. All other setters have one parameter.\n* The `buySoda` method is public. It takes the name of the soda to purchase (string) and the amount of money inserted into the machine (integer). In this example, there are five helper methods. Three are for data validation and two are used to update the `SodaMachine` object.\n* `validSoda` takes the name of a soda (string) and validates that this string is found in the `sodas` attribute. This is a helper method and should be marked as `private`.\n* `enoughSoda` takes the name of a soda (string) and validates that there is at least one of them in the inventory. This is a helper method and should be marked as `private`.\n* `enoughMoney` takes the money inserted in the machine (integer) and validates that it is greater than or equal to the price of a soda ($2). This is a helper method and should be marked as `private`.\n* `updateInventory` takes the name of a soda (string) and reduces the inventory attribute for that soda by 1. This is a helper method and should be marked as `private`.\n* `updateMoney` has no parameters and increases the `money` attribute by 2 (the cost of a soda). This is a helper method and should be marked as `private`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3626,7 +3747,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class with encapsulation and data validation"
+   "learningObjectives": "SWBAT create a class with encapsulation and data validation",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3640,7 +3764,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\nstatic int addition(int num1, int num2) {\n  return num1 + num2;\n}\n```\n\n* The `static` keyword comes before the return type for the method, which is why `int static addition(int num1, int num2) {` is incorrect.\n* This method takes two integers as parameters, which is why `static int addition(double num1, int num2) {` is incorrect.\n",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3672,7 +3795,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a static method"
+   "learningObjectives": "SWBAT create a static method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3707,7 +3833,6 @@
     }
    ],
    "guidance": "The correct answers are:\n* `ABC` is the subclass\n* `XYZ` is the superclass\n\nBecause the definition of `ABC` contains `extends XYZ`, `ABC` is the subclass. That means `XYZ` must be the superclass.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3743,7 +3868,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT distinguish between the superclass and the subclass"
+   "learningObjectives": "SWBAT distinguish between the superclass and the subclass",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3773,7 +3901,6 @@
     }
    ],
    "guidance": "The keyword `super` refers to the superclass, which is sometimes called the parent class. For example, calling `super` in the constructor of the subclass will call the constructor of the superclass.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3809,7 +3936,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify to what the super keyword refers"
+   "learningObjectives": "SWBAT identify to what the super keyword refers",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3844,7 +3974,6 @@
     }
    ],
    "guidance": "The correct answers are:\n* `When the object is an instance of the same class.`\n* `When the object is an instance of the subclass.`\n\nThe `instanceof` operator compares an object and a class. If the object has the same type as the comparison class it returns `true`. It also returns `true` when the object is a subclass of the comparison class.\n\n",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3880,7 +4009,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT test for inheritance hierarchy"
+   "learningObjectives": "SWBAT test for inheritance hierarchy",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3915,7 +4047,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nclass Dog extends Pet {}\n```\n\nJava uses the `extends` keyword to indicate inheritance.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -3945,7 +4076,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a subclass"
+   "learningObjectives": "SWBAT create a subclass",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3959,7 +4093,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\nclass Pug extends Dog {\n  public Pug(String n, String b) {\n    super(n, b);\n  }\n}\n```\n\nCreate a public constructor that has the same parameters as the superclass. Within the constructor, use the `super` keyword and pass it the parameters. Java will call the constructor from the superclass with the appropriate parameters.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -3985,7 +4118,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT call the constructor from the superclass with arguments"
+   "learningObjectives": "SWBAT call the constructor from the superclass with arguments",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -3999,7 +4135,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "Here is the correct answer:\n\n```java\nclass Dog extends Pet {\n  private String breed;\n  public Dog(String n, String a, String b) {\n    super(n, a);\n    breed = b;\n  }\n}\n```\n\n* The `Dog` class extends the `Pet` class, not the other way around.\n* Declare the `breed` attribute.\n* The constructor for `Dog` needs all of the parameters of the `Pet` class plus the parameter for `breed`.\n* The `Pet` constructor only takes two arguments, so only pass it information for the `name` and `age` attributes.\n* Initialize the `breed` attribute in the `Dog` constructor.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -4033,7 +4168,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT extend the constructor of the superclass"
+   "learningObjectives": "SWBAT extend the constructor of the superclass",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4068,7 +4206,6 @@
     }
    ],
    "guidance": "The correct answers are:\n\n* Method overriding happens when the subclass has a method with the same name as the superclass, but the subclass's method does something different.\n* Extending a class happens when new attributes or methods are added to the subclass that do not exist in the superclass.\n\nThe other two choices are incorrect because they have confused \"method overriding\" with the definition for \"extending a class\" and vice versa.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4104,7 +4241,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT differentiate between extending a class and method overriding"
+   "learningObjectives": "SWBAT differentiate between extending a class and method overriding",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4118,7 +4258,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "Here is the answer: \n\n```java\nclass Sedan extends Car {\n  public Sedan(String ma, String mo, String c) {\n    super(ma, mo, c);\n  }\n  public void describe() {\n    System.out.print(\"I am a \" + getColor() + \" \");\n    System.out.println(getMake() + \" \" + getModel() + \".\");\n  }\n}\n```\n\n* The `Sedan` class should inherit from the `Car` class, so be sure to use the `extends` keyword.\n* The `Sedan` class needs to invoke a `Car` constructor to pass it three arguments. Use the `super` keyword for this.\n* The `make`, `model`, and `color` keywords are a part of the superclass, so you need to use the getter methods to access these values.\n\n",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -4144,7 +4283,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT extend the subclass with a new method"
+   "learningObjectives": "SWBAT extend the subclass with a new method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4179,7 +4321,6 @@
     }
    ],
    "guidance": "You do not need to use any special key words to tell Java that the current method is overriding a method from the superclass. Method declarations and method overriding look the same from the declaration point of view.\n\n```java\n  public void acceleration() {\n    System.out.println(\"0 to 60 in \" + acceleration + \" seconds!\");\n  }\n```",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4207,7 +4348,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT override a method from a superclass"
+   "learningObjectives": "SWBAT override a method from a superclass",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4221,7 +4365,6 @@
    "text": "```\nclass <<<FreightTrain>>> extends <<<Train>>> {\n  <<<@Override>>>\n  public void <<<length>>>() {\n    System.out.println(\"The train has \" + <<<getCars()>>> + \" freight cars.\");\n  }\n}\n```",
    "distractors": "cars\nOverride\n@Extends",
    "guidance": "The correct answer is:\n\n```java\nclass FreightTrain extends Train {\n  @Override\n  public void length() {\n    System.out.println(\"The train has \" + getCars() + \" freight cars.\");\n  }\n}\n```\n\n* When using the `extends` keyword, the subclass (`FreightTrain`) comes before and the superclass (`Train`) comes after.\n* The correct annotation for override is `@Override`.\n* You are overriding the `length` method, so make sure it appears in the `FreightTrain` class.\n* The `cars` attribute is private to the superclass, so use `getCars` to access it.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -4279,6 +4422,9 @@
      " + \" freight cars.\");\n  }\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -4314,7 +4460,6 @@
     }
    ],
    "guidance": "Multiple inheritance where the superclasses have different data types leads to ambiguity. Imagine that each superclass has a method with the same name. Java cannot tell which method to invoke if the subclass calls this method. ",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4350,7 +4495,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT explain why multiple inheritance with superclasses of different types is not allowed"
+   "learningObjectives": "SWBAT explain why multiple inheritance with superclasses of different types is not allowed",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4364,7 +4512,6 @@
    "text": "The substitution principle states that a substitution can be made if a <<<subclass>>> is used in place of its <<<superclass>>>.",
    "distractors": "class\nmethod\nobject",
    "guidance": "The substitution works when a subclass is used in place of its superclass.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -4413,6 +4560,9 @@
      "."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -4427,7 +4577,6 @@
    "text": "<<<Code sample 1>>> is an example of extending a class.\n<<<Code sample 2>>> is an example of overriding a method.",
    "distractors": "",
    "guidance": "Extending a class is when a new method is added to the subclass that is not present in either superclass. Overriding a method is when the subclass has a method that shares a name with a method from a superclass, but the subclass method performs a different task.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -4475,6 +4624,9 @@
      " is an example of overriding a method."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -4489,7 +4641,6 @@
    "text": "```markdown\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() <<<extends Alpha>>> {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta <<<extends Charlie>>> () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```",
    "distractors": "extends Bravo\nextends Delta",
    "guidance": "Here is the solution:\n\n```java\nclass Alpha() {\n  public void display() {\n    System.out.println(\"Alpha\");\n  }\n}\n\nclass Bravo() extends Alpha {\n  public void display() {\n    System.out.println(\"Bravo\");\n    super.display();\n  }\n}\n\nclass Charlie() extends Alpha {\n  public void display() {\n    System.out.println(\"Charlie\");\n    super.display();\n  }\n}\n\nclass Delta extends Charlie () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```\n\n* The `b` object runs the `display` method which prints `Bravo`. \n* The next line of output is `Alpha` which means `super` refers to class `Alpha`. Therefore, class `Bravo` extends class `Alpha`.\n* The `d` object runs the `display` method which prints `Delta`. However, there are two more lines of output. That means class `Delta` has multilevel inheritance.\n* The next line of output is `Charlie` which means `super` refers to class `Charlie`. Therefore, class `Delta` extends class `Charlie`.\n* Finally, calling `display` in class `Charlie` must also print `Alpha`. That means class `Charlie` extends class `Alpha`.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -4541,6 +4692,9 @@
      " () {\n  public void display() {\n    System.out.println(\"Delta\");\n    super.display();\n  }\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -4555,7 +4709,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\npublic final void immutable() {\n  System.out.println(\"Cannot override this method\");\n}\n```\n\n* The `final` keyword comes before data type. Only parameters go between the parentheses.\n* Method declarations do not use the `extends` keyword,",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -4589,7 +4742,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a method that cannot be overriden"
+   "learningObjectives": "SWBAT create a method that cannot be overriden",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4624,7 +4780,6 @@
     }
    ],
    "guidance": "The correct answers are:\n* `Class `Foxtrot` overrides the `hello` method.` This is true because `super.hello` means another method `hello` exists in the superclass.\n* `Class `Foxtrot` is a superclass to `Echo` and a subclass to `Golf`.` This is true because `Foxtrot` extends `Golf` and `Echo` extends `Foxtrot`.\n* `Class `Echo` is an example of multilevel inheritance.` This is true because it inherits from `Foxtrot` who in turn inherits from `Golf`.\n\nThe substitution principle only works when you substitute a subclass for a superclass. `Golf` is a superclass to `Echno`, so the substitution does not work.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4652,7 +4807,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT make inferences about multilevel inheritance, inheritance hierarchy, and method overriding"
+   "learningObjectives": "SWBAT make inferences about multilevel inheritance, inheritance hierarchy, and method overriding",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4666,7 +4824,6 @@
    "text": "```python\nclass Parent <<<extends Adult>>> {\n  public Parent(<<<String n>>>, int c) {\n    <<<super>>>(n, <<<c>>>);\n  }\n}\n```",
    "distractors": "extends Human\nString name\nfinal\nnumChildren",
    "guidance": "The correct answer is:\n\n```java\nclass Parent extends Adult {\n  public Parent(String n, int c) {\n    super(n, c);\n  }\n}\n```\n\n* The `Parent` class must have the `name` and `numChildren` attributes. To do that, inherit from `Adult` who then inherits from `Human`\n* The constructor uses the variable `n`, so the parameter should be `String n` not `String name`.\n* The constructor has the parameter `c`, so the variable should be `c` not `numChildren`.\n",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -4713,6 +4870,9 @@
      ");\n  }\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -4743,7 +4903,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```markdown\nIndia\n```\n\n* `Golf` extends `India`, so it is a subclass. However, nothing extends `Golf` so it is not a superclass.\n* `Hotel` does not extend any classes so it is not a subclass. `India` extends `Hotel`, so `Hotel` is a superclass.\n*  `India` extends `Hotel` so it is a subclass. In addition, `Golf` extends `India` so `India` is a superclass.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4777,7 +4936,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT identify inheritance hierarchy order"
+   "learningObjectives": "SWBAT identify inheritance hierarchy order",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4802,7 +4964,6 @@
     }
    ],
    "guidance": "The code would print `true` because object `k` is an instance of the `Kilo` class, and the `Kilo` class inherits from the `Juliet` class. Therefore, `k` is an instance of the `Juliet` class.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4836,7 +4997,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT determine if an object is an instance of another class"
+   "learningObjectives": "SWBAT determine if an object is an instance of another class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4871,7 +5035,6 @@
     }
    ],
    "guidance": "The substitution principle says that a subclass can be used in place of the superclass. Since `myMethod` has a parameter of type `A` and `B` is a subclass of `A`, an object of type `B` can be passed to `myMethod`.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4905,7 +5068,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT recognize the substitution principle in action"
+   "learningObjectives": "SWBAT recognize the substitution principle in action",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4940,7 +5106,6 @@
     }
    ],
    "guidance": "The `final` keyword means that a subclass can access the method, but it cannot override it.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -4974,7 +5139,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT explain what the \"final\" keyword does in a method of a superclass"
+   "learningObjectives": "SWBAT explain what the \"final\" keyword does in a method of a superclass",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -4989,7 +5157,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Podcast extends MP3 {\n  private String name;\n  private String date;\n  \n  public Podcast(String n, String t, int l, String g, String d) {\n    name = n;\n    setTitle(t);\n    setLength(l);\n    setGenre(g);\n    date = d;\n  }\n  \n  public String displayName() {\n    return \"The name is \" + name;\n  }\n  \n  public String displayTitle() {\n    return \"The title is \" + getTitle();\n  }\n  \n  public String displayLength() {\n    int minutes = getLength() / 60;\n    int seconds = getLength() % 60;\n    return \"The length is \" + minutes + \" minutes and \" + seconds + \" seconds\";\n  }\n  \n  public String displayGenre() {\n    return \"The genre is \" + getGenre();\n  }\n  \n  public String displayDate() {\n    return \"The date is \" + date;\n  }\n}\n\n//add class definitions above this line\n\npublic class LabChallenge {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Podcast p = new Podcast(\"Planet Money\", \"Hollywood's Black List\", 1460, \"economics\", \"10 July 2020\");\n    System.out.println(p.displayName());\n    System.out.println(p.displayTitle());\n    System.out.println(p.displayLength());\n    System.out.println(p.displayGenre());\n    System.out.println(p.displayDate());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Create the `name` and `date` attributes for the `Podcast` class.\n* The constructor requires `name`, `title`, `length`, `genre`, and `date` as parameters.\n* Set the `name` and `date` attributes like normal.\n* Use setter methods to set the attributes `title`, `length`, and `genre`.\n* The `displayName` and `displayDate` methods concatenate the required text and `name` and `date` attributes.\n* The `displayTitle` and `displayGenre` methods concatenate the required text and the getter methods for the `title` and `genre` attributes.\n* The `displayLength` method needs to transform seconds into minutes and seconds. To calculate minutes, divide `getLength()` by `60`. Since these numbers are both integers, Java will truncate the decimal output (it will not round up or down). To calculate the seconds, use `getLength()` modulo (`%`) `60`. This will return the remainder when dividing the length by 60.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5023,7 +5190,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT construct a class that overrides and extends the parent class"
+   "learningObjectives": "SWBAT construct a class that overrides and extends the parent class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5038,7 +5208,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass Satellite extends CelestialBody {\n  private String hostPlanet;\n  \n  public Satellite(double s, double m, String c, String n, String h) {\n    super(s, m, c, n);\n    hostPlanet = h;\n  }\n  \n  public String getHostPlanet() {\n    return hostPlanet;\n  }\n  \n  public void setHostPlanet(String newHostPlanet) {\n    hostPlanet = newHostPlanet;\n  }\n}\n\nclass Planet extends CelestialBody {\n  private String hostStar;\n  \n  public Planet(double s, double m, String c, String n, String st) {\n    super(s, m, c, n);\n    hostStar = st;\n  }\n  \n  public String getHostStar() {\n    return hostStar;\n  }\n  \n  public void setHostStar(String newHostStar) {\n    hostStar = newHostStar;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise1 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Satellite s = new Satellite(2651, 3716, \"helium\", \"moon\", \"earth\");\n    Planet p = new Planet(5349, 8910, \"nitrogen\", \"earth\", \"sun\");\n    \n    System.out.println(s.getSize());\n    System.out.println(s.getMass());\n    System.out.println(s.getComposition());\n    System.out.println(s.getName());\n    System.out.println(s.getHostPlanet());\n    System.out.println(p.getSize());\n    System.out.println(p.getMass());\n    System.out.println(p.getComposition());\n    System.out.println(p.getName());\n    System.out.println(p.getHostStar());\n  \n    //add code above this line   \n  }\n}\n```\n\n### For the `Satellite` class:\n* Inherit from the `CelestialBody` class.\n* Create the attribute `hostPlanet`.\n* Create a constructor with the arguments for the superclass and `hostPlanet`.\n* Call the constructor from the superclass with `super` and pass it the required arguments.\n* Assign a value to the `hostPlanet` attribute.\n* Create a getter and setter for `hostPlanet`.\n\n### For the `Planet` class:\n* Inherit from the `CelestialBody` class.\n* Create the attribute `hostStar`.\n* Create a constructor with the arguments for the superclass and `hostStar`.\n* Call the constructor from the superclass with `super` and pass it the required arguments.\n* Assign a value to the `hostStar` attribute.\n* Create a getter and setter for `hostStar`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5072,7 +5241,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT extend the constructor of the parent class"
+   "learningObjectives": "SWBAT extend the constructor of the parent class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5087,7 +5259,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass BlogPost extends Book {\n  private String website;\n  private int wordCount;\n  private int pageViews;\n  \n  public BlogPost (String t, String a, String g, String w, int wc, int pv) {\n    super(t, a, g);\n    website = w;\n    wordCount = wc;\n    pageViews = pv;\n  }\n  \n  public String getWebsite() {\n    return website;\n  }\n  \n  public void setWebsite(String newWebsite) {\n    website = newWebsite;\n  }\n  \n  public int getWordCount() {\n    return wordCount;\n  }\n  \n  public void setWordCount(int newWordCount) {\n    wordCount = newWordCount;\n  }\n  \n  public int getPageViews() {\n    return pageViews;\n  }\n  \n  public void setPageViews(int newPageViews) {\n    pageViews = newPageViews;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    BlogPost myPost = new BlogPost(\"Hot Summer Trends\", \"Amy Gutierrez\", \"fashion\", \"Vogue\", 2319, 2748);\n    \n    System.out.println(myPost.getWebsite());\n    System.out.println(myPost.getTitle());\n    System.out.println(myPost.getAuthor());\n    System.out.println(myPost.getWordCount());\n    System.out.println(myPost.getGenre());\n    System.out.println(myPost.getPageViews());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Create the `BlogPost` class that inherits from the `Book` class.\n* Create the attributes `website`, `wordCount`, and `pageViews`.\n* The `BlogPost` constructor takes the same arguments as the `Book` class plus the three attributes unique to the `BlogPost` class.\n* Use the `super` keyword and pass it the `title`, `author`, and `genre` attributes.\n* Initialize the `website`, `wordCount`, and `pageViews` attributes.\n* Create getters and setters for `website`, `wordCount`, and `pageViews`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5121,7 +5292,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT extend the constructor of the parent class"
+   "learningObjectives": "SWBAT extend the constructor of the parent class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5136,7 +5310,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nclass Parent1 {\n  public String identify() {\n    return \"This method is called from Parent1\";\n  }\n}\n\nclass Parent2 extends Parent1 {\n  public String identify() {\n    return \"This method is called from Parent2\";\n  }\n  \n  public String identify2() {\n    return super.identify();\n  }\n}\n\n//add class definitions below this line\n\nclass Child extends Parent2 {\n  public String identify() {\n    return \"This method is called from Child\";\n  }\n  \n  public String identify2() {\n    return super.identify();\n  }\n  \n  public String identify3() {\n    return super.identify2();\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise3 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    Child childObject = new Child();\n    System.out.println(childObject.identify());\n    System.out.println(childObject.identify2());\n    System.out.println(childObject.identify3());\n  \n    //add code above this line   \n  }\n}\n```\n\n### `Parent1` Class\nNo changes need to be made to this class.\n\n### `Parent2` Class\n* Make this class inherit from `Parent1`.\n* Create a methods that calls the `identify` method from the `Parent1` class with the `super` keyword. In this case, the method is called `identify2`.\n\n### `Child` Class\n* Create this class and make it inherit from `Parent2`.\n* Override the `identify` class so the message references the `Child` class.\n* Create the `identify2` method that uses the `super` keyword to call `identify` from `Parent2`.\n* Create the `identify3` method that uses the `super` keyword to call the method in `Parent2` that references the `identify` method in the `Parent1` class. In this case, the method call is `super.identify2()`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5170,7 +5343,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a class that has multilevel inheritance"
+   "learningObjectives": "SWBAT create a class that has multilevel inheritance",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5185,7 +5361,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass CardHolder extends Person {\n  private int accountNumber;\n  private double balance;\n  private int creditLimit;\n  \n  public CardHolder(String n, String a, int an) {\n    super(n, a);\n    accountNumber = an;\n    balance = 0;\n    creditLimit = 5000;\n  }\n  \n  public int getAccountNumber() {\n    return accountNumber;\n  }\n  \n  public void setAccountNumber(int newAccountNumber) {\n    accountNumber = newAccountNumber;\n  }\n  \n  public double getBalance() {\n    return balance;\n  }\n  \n  public void setBalance(double newBalance) {\n    balance = newBalance;\n  }\n  \n  public int getCreditLimit() {\n    return creditLimit;\n  }\n  \n  public void setCreditLimit(int newCreditLimit) {\n    creditLimit = newCreditLimit;\n  }\n  \n  public void processSale(double price) {\n    balance += price;\n  }\n  \n  public void makePayment(double amount) {\n    balance -= amount;\n  }\n}\n\nclass PlatinumClient extends CardHolder {\n  private double cashBack;\n  private double rewards;\n  \n  public PlatinumClient(String n, String a, int an) {\n    super(n, a, an);\n    cashBack = 0.02;\n    rewards = 0;\n  }\n  \n  public double getCashBack() {\n    return cashBack;\n  }\n  \n  public void setCashBack(double newCashBack) {\n    cashBack = newCashBack;\n  }\n  \n  public double getRewards() {\n    return rewards;\n  }\n  \n  public void setRewards(double newRewards) {\n    rewards = newRewards;\n  }\n  \n  public void processSale(double price) {\n    rewards += cashBack * price;\n    setBalance(getBalance() + price);\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise5 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n  \n    PlatinumClient p = new PlatinumClient(\"Sarah\", \"101 Main Street\", 123364);\n    p.processSale(100);\n    System.out.println(p.getRewards());\n    System.out.println(p.getBalance());\n    p.makePayment(50);\n    System.out.println(p.getBalance());\n    System.out.println(p.info());\n  \n    //add code above this line   \n  }\n}\n```\n\n### For the `CardHolder` Class\n* Extend the `Person` class.\n* Add the attributes `accountNumber`, `balance`, and `creditLimit`.\n* The constructor should take arguments for `name`, `address`, and `accountNumber`. Call the constructor from the superclass with the `super` keyword and the values for `name` and `address`. The values for `balance` and `creditLimit` should be set to `0` and `5000` respectively.\n* Create getters and setters for `accountNumber`, `balance`, and `creditLimit`.\n* The method `processSale` takes a double and adds this to `balance`.\n* The method `makePayment` takes a double and subtracts it from `balance`.\n\n### For the `PlatinumClient` Class\n* Extend the `CardHolder` class.\n* Add the attributes `cashBack` and `rewards`.\n* The constructor takes values for `name`, `address`, and `accountNumber`. Pass these three values to the constructor of the superclass with the `super` keyword. Manually set `rewards` to `0` and `cashBack` to `0.02`.\n* Create getters and setters for `cashBack` and `rewards`.\n* Override the `processSale` method so that `rewards` increases by the sale amount times `cashBack`. The `balance` attribute should also increase by the sale amount.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5219,7 +5394,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create two classes with multilevel inheritance"
+   "learningObjectives": "SWBAT create two classes with multilevel inheritance",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5234,7 +5412,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n//add class definitions below this line\n\nclass RegionalBank extends Bank {\n  public double[][] regionalAccounts;\n  \n  public RegionalBank(String n, int c, double[][] a) {\n    setName(n);\n    setCustomers(c);\n    regionalAccounts = a;\n  }\n  \n  public double[][] getRegionalAccounts() {\n    return regionalAccounts;\n  }\n  \n  public void setRegionalAccounts(double[][] newAccounts) {\n    regionalAccounts = newAccounts;\n  }\n  \n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      setAccounts(accounts);\n      total += branchTotal();\n    }\n    return total;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise4 {\n  public static void main(String[] args) {\n    \n    //add code below this line\n    double[][] accounts = {{10000, 13000, 22000},\n                           {30000, 7000, 19000},\n                           {15000, 23000, 31000}};\n    RegionalBank rb = new RegionalBank(\"Main Street Bank\", 9, accounts);\n    System.out.println(rb.regionalTotal());\n  \n    //add code above this line   \n  }\n}\n```\n\n* Extend the `Bank` class.\n* The constructor should take values for `name`, `customers`, and `accounts`. Remember, the `accounts` attribute should be a 2D array of doubles.\n* Use the `setName` and `setCustomers` methods to set the values for `name` and `customers`. You can set the value of `accounts` normally.\n* Add a getter and a setter for `accounts`.\n* Create the `regionalTotal` method. This method needs to sum all of the elements in a 2D array. Create a variable that stores the sum of the accounts and set it to `0`.\n* One way to solve this problem is to use a nested loop. That solution would look something like this:\n\n```java\n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      for (double account : accounts) {\n        total += account;\n      }\n    }\n    return total;\n  }\n```\n* The sample solution above makes use of the `bankTotal` method in the superclass `Bank`. This method only works if the attribute `accounts` is an array of doubles. The variable `accounts` is an array of doubles. Pass it to `setAccounts` and then increment `total` with return value from `branchTotal`. \n\n```java\n  public double regionalTotal() {\n    double total = 0;\n    for (double[] accounts : regionalAccounts) {\n      setAccounts(accounts);\n      total += branchTotal();\n    }\n    return total;\n  }\n```",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5268,7 +5445,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT extend the parent class with a new method"
+   "learningObjectives": "SWBAT extend the parent class with a new method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5298,7 +5478,6 @@
     }
    ],
    "guidance": "Polymorphism occurs when there is a single interface that works with multiple forms. When overriding a method, two methods have the same name (a shared interface) and they work with different forms (the superclass and the subclass). This is why method overriding is an example of polymorphism.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -5334,7 +5513,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT explain why method overriding is an example of polymorphism"
+   "learningObjectives": "SWBAT explain why method overriding is an example of polymorphism",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5364,7 +5546,6 @@
     }
    ],
    "guidance": "This code would generate an error message. The method `totalChars` is overloaded, but it does not have a version that takes two string arguments. The method call must match one of the overloaded method definitions.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -5400,7 +5581,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT properly call an overloaded method"
+   "learningObjectives": "SWBAT properly call an overloaded method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5414,7 +5598,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "Here is the solution:\n\n```java\nclass ChildClass extends ParentClass {\n  public void sayHello() {\n    System.out.println(\"Hello\");\n  }\n}\n```\n\n* `ChildClass` is a concrete class (not abstract), but you do not use a keyword to indicate this.\n* `ChildClass` must inherit from `ParentClass`, so you need to use the `extends` keyword.\n* `SayHello` is an abstract method, which means the subclass must override it.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5448,7 +5631,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT create a subclass from an abstract class"
+   "learningObjectives": "SWBAT create a subclass from an abstract class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5488,7 +5674,6 @@
     }
    ],
    "guidance": "The correct answers are:\n\n```markdown\nAbstract methods\nMethod overloading\nMethod overriding\n```\n\nInheritance by itself is not a form of polymorphism. If inheritance uses method overriding, then that would be a form of polymorphism. However, you can have inheritance without method overriding, therefore inheritance is considered a form of polymorphism.\n\nEncapsulation is about hiding and sharing information in objects. This is not a form of polymorphism.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -5516,7 +5701,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify the different forms of polymorphism in Java"
+   "learningObjectives": "SWBAT identify the different forms of polymorphism in Java",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5546,7 +5734,6 @@
     }
    ],
    "guidance": "The correct answer is **method overriding**.\n\n* This is not method overloading because you would need the more than one method in the same class. There are two versions of `area`, but one is in the superclass and the other is in the subclass. In addition, these methods have the same definition (neither one takes a parameter).\n* This is not abstract methods because `Rectangle` is not an abstract class, and the method `area` is not an abstract method.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -5574,7 +5761,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify method overriding"
+   "learningObjectives": "SWBAT identify method overriding",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5604,7 +5794,6 @@
     }
    ],
    "guidance": "The correct answer is `Method overloading`. Neither method uses the keyword `abstract` so these are not abstract methods. These methods do not appear in a superclass and a subclass so this is not method overriding. This is method overloading because we have methods with the same name but different parameters.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -5645,7 +5834,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify method overloading"
+   "learningObjectives": "SWBAT identify method overloading",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5659,7 +5851,6 @@
    "text": "abstract class ClassA {\n  <<<public abstract>>> void greeting();\n}\n\nclass ClassB extends <<<ClassA>>> {\n  <<<public void>>> greeting() {\n    System.out.println(\"Hello\");\n  }\n}",
    "distractors": "ClassC\nabstract",
    "guidance": "The correct answer is:\n\n```java\nabstract class ClassA {\n  public abstract void greeting();\n}\n\nclass ClassB extends ClassA {\n  public void greeting() {\n    System.out.println(\"Hello\");\n  }\n}\n```\n\n* Since the `greeting` method in `ClassA` is not defined, it must be an `abstract` method.\n* There is no `ClassC` defined so `ClassB` must extend `ClassA`.\n* Since `ClassB` extends `ClassA`, it must override the `greeting` method. However, this is not an abstract method; it is a concrete method. So the `abstract` keyword is not used.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -5716,6 +5907,9 @@
      " greeting() {\n    System.out.println(\"Hello\");\n  }\n}"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -5730,7 +5924,6 @@
    "text": "When a subclass has a method with the same name as the superclass, but the subclass performs a different task - <<<Method Overriding>>>\nWhen a method performs different tasks depending on its parameters - <<<Method Overloading>>>\nWhen a method **must** be overriden in the sublcass - <<<Abstract Method>>>",
    "distractors": "",
    "guidance": "**Method Overriding** - When a subclass has a method with the same name as the superclass, but the subclass performs a different task.\n**Method Overloading** - When a method performs different tasks depending on its parameters.\n**Abstract Method** - When a method must be overriden in the subclass.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -5786,6 +5979,9 @@
      0
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -5816,7 +6012,6 @@
     }
    ],
    "guidance": "The correct answer is method overloading because you have more than one method in the same class with the same name but different sets of parameters. In addition, there is no inheritance. A subclass needs to inherit from a superclass before it can override a method. Similarly, you must inherit from an abstract class before implementing an abstract method.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -5857,7 +6052,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT identify method overloading"
+   "learningObjectives": "SWBAT identify method overloading",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5872,7 +6070,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nclass Chef {\n  private String name;\n  private String cuisine;\n  private int michelinStars;\n  \n  //add constructors below this line\n\n  public Chef(String n) {\n    name = n;\n  }\n  \n  public Chef(String n, String c) {\n    name = n;\n    cuisine = c;\n  }\n  \n  public Chef(String n, String c, int s) {\n    name = n;\n    cuisine = c;\n    michelinStars = s;\n  }\n\n  //add constructors above this line\n  \n  public String display() {\n    String msg = String.format(\"%s is known for %s cuisine and has %d Michelin stars.\", name, cuisine, michelinStars);\n    return msg;\n  }\n}\n\n//add class definitions above this line\n\npublic class LabChallenge {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Chef c1 = new Chef(\"Marco Pierre White\");\n    Chef c2 = new Chef(\"Rene Redzepi\", \"Nordic\");\n    Chef c3 = new Chef(\"Thomas Keller\", \"French\", 3);\n    \n    System.out.println(c1.display());\n    System.out.println(c2.display());\n    System.out.println(c3.display());\n    \n    //add code above this line\n  }\n}\n```\n\n* One constructor needs to take a single string argument that will be assigned to the `name` attribute. Java will automatically set the attributes `cuisine` and `michelinStars` to `null` and `0` respectively.\n* One constructor needs to take two string arguments. One will be assigned to the `name` attribute, and the other will be assigned to the `cuisine` attribute. Java will automatically set the attribute `michelinStars` to `0`.\n* One constructor takes three parameters. The first one is assigned to `name`, the second to `cuisine`, and the third is assigned to the `michelinStars` attribute.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5906,7 +6103,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT overload the constructor"
+   "learningObjectives": "SWBAT overload the constructor",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5921,7 +6121,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\nimport java.util.Random; \n\nclass Lottery {\n  public ArrayList<Integer> shuffle() {\n    Random r = new Random();\n    ArrayList<Integer> nums = new ArrayList<Integer>();\n    for (int i = 0; i < 5; i++) {\n      int num = r.nextInt(20);\n      nums.add(num);\n    }\n    return nums;\n  }\n}\n\n//add class definitions below this line\n\nclass PowerBall extends Lottery {\n  public ArrayList<Integer> shuffle() {\n    Random r = new Random();\n    ArrayList<Integer> nums = new ArrayList<Integer>();\n    for (int i = 0; i < 6; i++) {\n      int num = r.nextInt(100);\n      nums.add(num);\n    }\n    return nums;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    PowerBall p = new PowerBall();\n    System.out.println(p.shuffle());\n    \n    //add code above this line\n  }\n}\n```\n\n* Be sure that `PowerBall` extends the `Lottery` class.\n* Override the `shuffle` method.\n* In the for loop, change the `5` to a `6` so that it returns six random integers.\n* The `nextInt` method takes one argument. It will return a random integer up to but not including the argument. Since you want to return a random number up to 99, use `nextInt(100)`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -5955,7 +6154,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT override a method from a superclass"
+   "learningObjectives": "SWBAT override a method from a superclass",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -5970,7 +6172,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.Arrays;\n\n//add class definitions below this line\n\nclass Median {\n  public double calculateMedian(int n1, int n2) {\n    return (double) (n1 + n2) / 2;\n  }\n  \n  public double calculateMedian(int n1, int n2, int n3) {\n    int[] nums = {n1, n2, n3};\n    Arrays.sort(nums);\n    return (double) nums[1];\n  }\n  \n  public double calculateMedian(int n1, int n2, int n3, int n4) {\n    int[] nums = {n1, n2, n3, n4};\n    Arrays.sort(nums);\n    return (double) (nums[1] + nums[2]) / 2;\n  }\n  \n  public double calculateMedian(int n1, int n2, int n3, int n4, int n5) {\n    int[] nums = {n1, n2, n3, n4, n5};\n    Arrays.sort(nums);\n    return (double) nums[2];\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise4 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Median m = new Median();\n    System.out.println(m.calculateMedian(3, 5, 1, 4, 2));\n    System.out.println(m.calculateMedian(8, 6, 4, 2));\n    System.out.println(m.calculateMedian(9, 3, 7));\n    System.out.println(m.calculateMedian(5, 2));\n    \n    //add code above this line\n  }\n}\n```\n\nThere are two scenarios for calculating the median value: an odd number integers and an even number of integers.\n* Odd Number - When there are an odd number of arguments, take the arguments and load them into an array. Sort the array with `Arrays.sort`. Then return the element in the middle of the array. When there are 3 arguments that would be the element at index `1`. When there are 5 arguments the middle element would be the element at index `2`. Be sure to type cast the return values as a double.\n* Even Number - When there are two arguments return the average of these two values. When there are 4 arguments, load them into an array and sort it with `Arrays.sort`. Return the average of elements at indices `1` and `2`. Be sure to type cast the return values as a double.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6004,7 +6205,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT overload a method with four different type signatures"
+   "learningObjectives": "SWBAT overload a method with four different type signatures",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6019,7 +6223,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.ArrayList;\nimport java.io.*;\n\nclass Substitute {\n  private String sourceFile;\n  private String answerFile;\n  private ArrayList<String[]> wordsList;\n  private String wordsString;\n  \n  public Substitute(String source, String answer) {\n    sourceFile = source;\n    answerFile = answer;\n    wordsList = new ArrayList<String[]>();\n    wordsString = null;\n  }\n  \n  public ArrayList<String[]> getWordsList() {\n    return wordsList;\n  }\n  \n  public String getWordsString() {\n    return wordsString;\n  }\n  \n  public String getAnswerFile() {\n    return answerFile;\n  }\n  \n  /**\n   * Reads the text file stored in sourceFile and converts it to an\n   * ArrayList of arrays of strings. Each array represents a sentence,\n   * and element represents a word of the sentence. This ArrayList of\n   * arrays of strings is stored in the attribute wordsList.\n   */\n  public void stringToList() {\n    try {\n      ArrayList<String> lines = new ArrayList<String>();\n      BufferedReader reader = new BufferedReader(new FileReader(sourceFile));\n      String currentLine = reader.readLine();\n      while(currentLine != null) {\n        lines.add(currentLine);\n        currentLine = reader.readLine();\n      }\n      reader.close();\n      for (String line : lines) {\n        wordsList.add(line.split(\" \"));\n      }\n    } catch (IOException e) {\n      System.out.println(e);\n    }\n  }\n  \n  /**\n   * Takes the ArrayList of arrays of strings and coverts it back into\n   * a single string with newline characters. This string is stored\n   * in the wordsString attribute.\n   */\n  public void listToString() {\n    ArrayList<String> lines = new ArrayList<String>();\n    for (String[] line : wordsList) {\n      lines.add(String.join(\" \", line));\n    }\n    wordsString = String.join(\"\\n\", lines);\n  }\n  \n  /**\n   * Calls stringToList. Then iterates through the ArrayList of arrays of\n   * strings. If it is the fifth word, the element is replaces with\n   * \"HELLO\". This method calls listToString and prints the results.\n   */\n  public void swapWords() {\n    stringToList();\n    for (String[] line : wordsList) {\n      for (int i = 0; i < line.length; i++) {\n        if ((i + 1) % 5 == 0) {\n          line[i] = \"HELLO\";\n        }\n      }\n    }\n    listToString();\n    System.out.println(wordsString);\n  }\n}\n\n//add class definitions below this line\n\nclass Stars extends Substitute {\n  public Stars(String source, String answer) {\n    super(source, answer);\n  }\n  \n  private String createStars(String s) {\n    String stars = \"\";\n    for (int i = 0; i < s.length(); i++) {\n      stars += \"*\";\n    }\n    return stars;\n  }\n  \n  public void swapWords() {\n    stringToList();\n    for (String[] line : getWordsList()) {\n      for (int i = 0; i < line.length; i++) {\n        if ((i + 1) % 3 == 0) {\n          line[i] = createStars(line[i]);\n        }\n      }\n    }\n    listToString();\n    try {\n      BufferedWriter writer = new BufferedWriter(new FileWriter(getAnswerFile()));\n      writer.write(getWordsString());\n      writer.close();\n    } catch (IOException e) {\n      System.out.println(e);\n    } \n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise5 {  \n  public static void main(String[] args) {\n    String source = \"/home/codio/workspace/code/polymorphism/exercise5/words.txt\";\n    String answer = \"/home/codio/workspace/code/polymorphism/exercise5/answer.txt\";\n    \n    //add code below this line\n\n    Stars s = new Stars(source, answer);\n    s.swapWords();\n    \n    //add code above this line\n  }\n}\n```\n\n* The `swapWords` method needs to call the constructor of the superclass. Use the `super` keyword and pass it the required parameters.\n```java\n  public Stars(String source, String answer) {\n    super(source, answer);\n  }\n```\n* The `swapWords` method is almost the same as in the `Substitute` class except that you are going to change every third word. Use `% 3` instead of `% 5`. In addition, you do not want to replace the word with `HELLO` but a number of `*`. This example calls a helper method that will return the correct number of `*`.\n```java\n        if ((i + 1) % 3 == 0) {\n          line[i] = createStars(line[i]);\n        }\n```\n* This helper method takes the word to be replaced as an argument. Create an empty string that will contain the asterisks. Iterate a for loop as many times as the length of the word to be replaced. Add an asterisk to the string variable every time the loop runs. Finally, return the string variable with the asterisks. \n```java\n  private String createStars(String s) {\n    String stars = \"\";\n    for (int i = 0; i < s.length(); i++) {\n      stars += \"*\";\n    }\n    return stars;\n  }\n```",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6053,7 +6256,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT override a method that works with files."
+   "learningObjectives": "SWBAT override a method that works with files.",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6064,13 +6270,15 @@
    "showName": false,
    "instructions": "Submit your code for evaluation.",
    "command": "python /usr/share/codio/assessments/assessments.py",
-   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"partialPoints\":true,\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise2\",\"libs\":\"\",\"testsources\":\"\"}",
-   "arePartialPointsAllowed": true,
+   "codeEnvConfig": "{\"type\":\"java\",\"subtype\":\"junit\",\"files\":[{\"filePath\":\".guides/secure/polymorphism/Exercise2Tester.java\",\"className\":\"Exercise2Tester\"}],\"maxPoints\":20,\"wd\":\"\",\"sources\":\"code/polymorphism/exercise2\",\"libs\":\"\",\"testsources\":\"\",\"partialPoints\":true}",
    "timeoutSeconds": 300,
-   "guidance": "Here is one possible solution:\n\n```java\nabstract class Vehicle {\n  public abstract double travel(double time);\n}\n\n//add class definitions below this line\n\nclass Airplane extends Vehicle {\n  private double speed;\n  \n  public Airplane(double s) {\n    speed = s;\n  }\n  \n  public double travel(double time) {\n    return speed * time;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Airplane a = new Airplane(550.0);\n    System.out.println(a.travel(2));\n    System.out.println(a.travel(3.15));\n    System.out.println(a.travel(10.63));\n    \n    //add code above this line\n  }\n}\n```\n\n* Have `Airplane` extend the `Vehicle` class.\n* Since `distance` is an abstract method, the `Airplane` class must override this method.\n* The code sample that initiates an `Airplane` object shows that this class takes a value for the constructor.\n* Calculating distance is done by multiplying speed of the vehicle by time it is traveling. The `distance` method takes time as an argument, so the value representing speed is contained within the object (the value passed to the constructor).\n* The constructor for the `Airplane` class takes a double which represents speed.\n* The `distance` method returns `time` multiplied by the valued passed to the constructor.",
-   "showGuidanceAfterResponse": true,
+   "guidance": "Here is one possible solution:\n\n```java\nabstract class Vehicle {\n  public abstract double travel(double time);\n}\n\n//add class definitions below this line\n\nclass Airplane extends Vehicle {\n  private double speed;\n  \n  public Airplane(double s) {\n    speed = s;\n  }\n  \n  public double travel(double time) {\n    return speed * time;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Airplane a = new Airplane(550.0);\n    System.out.println(a.travel(2));\n    System.out.println(a.travel(3.15));\n    System.out.println(a.travel(10.63));\n    \n    //add code above this line\n  }\n}\n```\n\n* Have `Airplane` extend the `Vehicle` class.\n* Since `travel` is an abstract method, the `Airplane` class must override this method.\n* The code sample that initiates an `Airplane` object shows that this class takes a value for the constructor.\n* Calculating the distance traveled is done by multiplying speed of the vehicle by time it is traveling. The `travel` method takes time as an argument, so the value representing speed is contained within the object (the value passed to the constructor).\n* The constructor for the `Airplane` class takes a double which represents speed.\n* The `travel` method returns `time` multiplied by the valued passed to the constructor.",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   },
    "points": 20,
    "oneTimeTest": true,
+   "arePartialPointsAllowed": true,
    "metadata": {
     "tags": [
      {
@@ -6117,7 +6325,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nabstract class Temperature {\n  public abstract double celsius(double temp);\n  public abstract double fahrenheit(double temp);\n}\n\n//add class definitions below this line\n\nclass Conversion extends Temperature {\n  public double celsius(double temp) {\n    return (temp - 32) / 1.8;\n  }\n  \n  public double fahrenheit(double temp) {\n    return temp * 1.8 + 32;\n  }\n  \n  public double convertTo(String unit, double temp) {\n    if (unit.toLowerCase().equals(\"celsius\")) {\n      return celsius(temp);\n    } else if (unit.toLowerCase().equals(\"fahrenheit\")) {\n      return fahrenheit(temp);\n    }\n    \n    return 0;\n  }\n}\n\n//add class definitions above this line\n\npublic class Exercise3 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Conversion c = new Conversion();\n    System.out.println(c.convertTo(\"Celsius\", 212.0));\n    System.out.println(c.convertTo(\"CELSIUS\", 78.0));\n    System.out.println(c.convertTo(\"celsius\", 23.0));\n    System.out.println(c.convertTo(\"Fahrenheit\", 0.0));\n    System.out.println(c.convertTo(\"FAHRENHEIT\", 29.0));\n    System.out.println(c.convertTo(\"fahrenheit\", 112.0));\n    \n    //add code above this line\n  }\n}\n```\n* Make sure that `Conversion` extends the `Temperature` class.\n* Becuase `Temperature` is an abstract class, the `Conversion` class must override the `celsius` and `fahrenheit` methods.\n* The `celsius` method has the argument `temp` and returns `(temp - 32) / 1.8`.\n* The `fahrenheit` method has the argument `temp` and returns `temp * 1.8 + 32`.\n* The `convertTo` method takes a string (`unit`) and a double (`temp`) as arguments. Convert the `unit` to lowercase and ask if it equals `\"celsius\"`. If yes, return the output of `celsius(temp)`. If `unit` is equal to `\"fahrenheit\"`, return the output of `fahrenheit(temp)`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6151,7 +6358,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT override abstract methods inherited from an abstract class"
+   "learningObjectives": "SWBAT override abstract methods inherited from an abstract class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6186,7 +6396,6 @@
     }
    ],
    "guidance": "In order to use a user-defined class in a separate file, you need to compile both the user-defined class and the main Java program. These files **must** be in the same folder.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -6233,7 +6442,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT explain how to use user-defined classes in a separate file"
+   "learningObjectives": "SWBAT explain how to use user-defined classes in a separate file",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6247,7 +6459,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "Here is the solution:\n\n```java\nArrayList<MyClass> myArrayList = new ArrayList<MyClass>();\nfor (int i = 0; i < 10; i++) {\n  myArrayList.add(new MyClass());\n}\n```\n\n* The objects need to be stored in an ArrayList, and ArrayLists need to have the same type as the elements. The ArrayList should have the type `MyClass`.\n* You need ten objects, so the loop must run ten times.\n* Add an element to the ArrayList that is a `MyClass` object. Be sure to use the `new` keyword to instantiate a new `MyClass` object.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6287,7 +6498,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT create an ArrayList of user-defined objects"
+   "learningObjectives": "SWBAT create an ArrayList of user-defined objects",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6301,7 +6515,6 @@
    "text": "<<<Inheritance>>> should be used to add functionality if there is a \"is a\" relationship.\n<<<Composition>>> should be used to add functionality if there is a \"has a\" relationship.",
    "distractors": "Polymorphism\nEncapsulation",
    "guidance": "Use inheritance when you have a \"is a\" relationship; e.g. a car is a vehicle.\nUse composition when you have a \"has a\" relationship; e.g. a car has an engine.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -6349,6 +6562,9 @@
      " should be used to add functionality if there is a \"has a\" relationship."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -6384,7 +6600,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\npublic String toString() {\n  return getClass().getName() + \"[attribute= \" + attribute + \"]\";\n}\n```\n\n* The method to create a string representation is `toString`.\n* You must first get the class before getting the name — `getClass().getName()`.\n* A good string representation will tell you the class name as well as the values for each attribute.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -6420,7 +6635,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT override the toString method to create a string representation of the object"
+   "learningObjectives": "SWBAT override the toString method to create a string representation of the object",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6434,7 +6652,6 @@
    "text": "```\n<<<interface>>> MyInterface {\n  <<<String>>> greeting();\n}\n\nclass ExampleClass <<<implements>>> MyInterface {\n  <<<public String>>> greeting() {\n    return \"Hello\";\n  }\n}\n```",
    "distractors": "interface class\nextends\nvoid\npublic void",
    "guidance": "Here is the solution:\n\n```java\ninterface MyInterface {\n  String greeting();\n}\n\nclass ExampleClass implements MyInterface {\n  public String greeting() {\n    return \"Hello\";\n  }\n}\n```\n\n* The keyword for an interface is `interface`; the keyword `class` is not used.\n* Using an interface requires the keyword `implements`, not `extends`.\n* Methods in an interface are public by default so you do not need the `public` keyword.\n* In `ExampleClass` the `greeting` method returns a string. That means the method in the interface should use `String` and the method in the class should use `public String`.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -6489,6 +6706,9 @@
      " greeting() {\n    return \"Hello\";\n  }\n}\n```"
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -6503,7 +6723,6 @@
    "text": "Use <<<equals>>> to compare attribute values between two objects.\nUse <<<==>>> to compare memory addresses between two objects.",
    "distractors": "=\nequalTo",
    "guidance": "Use **equals** to compare attribute values between two objects.\nUse **==** to compare memory addresses between two objects.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -6552,6 +6771,9 @@
      " to compare memory addresses between two objects."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -6587,7 +6809,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\nmyList.get(3).go();\n```\n\nArrayLists use the `get` method as opposed to square brackets to reference an element. ArrayLists start counting elements with 0, so the fourth element would be `3`. Once you have referenced the correct element with `myList.get(3)` then add `.go()` to call the `go` method.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -6615,7 +6836,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT call a method on an object in an ArrayList"
+   "learningObjectives": "SWBAT call a method on an object in an ArrayList",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6645,7 +6869,6 @@
     }
    ],
    "guidance": "This is an example of composition. The `VideoGame` class is the composite class and the `Player` class is the component class. That means an instance of the `Player` class is used to create an instance of the `VideoGame` class. The given code defines the `Player` class, but it does not instantiate an object. You would need to instantiate the object `player`. The object `myPlayer` is not correct because that is not the name use when instantiating `myGame`.\n\n```python\nPlayer player = new Player();\nVideoGame myGame = VideoGame(player);\n```",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -6673,7 +6896,10 @@
     "opened": []
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT troubleshoot object composition"
+   "learningObjectives": "SWBAT troubleshoot object composition",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6688,7 +6914,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nclass BankAccount {\n  private double checking;\n  private double savings;\n  \n  public BankAccount(double c, double s) {\n    checking = c;\n    savings = s;\n  }\n  \n  //add toString definition below this line\n  \n  public String toString() {\n    return getClass().getName() + String.format(\"[checking=\" + checking + \", savings=\" + savings + \"]\", checking, savings);\n  }\n  \n  //add toString definition above this line\n  \n}\n\npublic class LabChallenge {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    BankAccount account1 = new BankAccount(2432, 89.52);\n    BankAccount account2 = new BankAccount(1998, 239.43);\n    System.out.println(account1);\n    System.out.println(account2);\n\n    //add code above this line\n    \n  }\n}\n```\n\n* Create the `toString` method, which should return a string.\n* Use `getClass().getName()` to get the object type.\n* Concatenate a string that contains the name and value for each attribute.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6722,7 +6947,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT override the toString method to create a string representation of an object"
+   "learningObjectives": "SWBAT override the toString method to create a string representation of an object",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6737,7 +6965,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nimport java.util.*;\n\nclass Band {\n  private String name;\n  private String genre;\n  private String[] members;\n  \n  public Band(String n, String g, String[]m) {\n    name = n;\n    genre = g;\n    members = m;\n  }\n  \n  //add class definitions below this line\n  \n  public String toString() {\n    String nameAttribute = \"name=\" + name + \", \";\n    String genreAttribute = \"genre=\" + genre + \", \";\n    String membersAttribute = \"members=\" + Arrays.toString(members);\n    return getClass().getName() + \"[\" + nameAttribute + genreAttribute + membersAttribute + \"]\";\n  }\n\n  //add method definition above this line\n}\n\npublic class Exercise2 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n    \n    String[] members = {\"Jerry\", \"Bob\", \"Mickey\", \"Bill\", \"Phil\", \"Pigpen\"};\n    Band dead = new Band(\"The Grateful Dead\", \"rock'n roll\", members);\n    System.out.println(dead);\n\n    //add code above this line\n    \n  }\n}\n```\n\n* Previous examples of the `toString` method have a single line of code as the return statement. For legibility purposes, the string is broken up across several variables.\n* Set `nameAttribute` to `\"name=\"` followed by the attribute `name`. Don't forget the comma.\n* Set `genreAttribute` to `\"genre=\"` followed by the attribute `genre`. Don't forget the comma.\n* Set `membersAttribute` to `\"members=\"`. If you add the `members` attribute, Java will not print the elements of the array. Instead, use `Array.toString(members)`. You do not need a comma since this is the last attribute.\n* Use `getClass().getName()` to get the object type followed by a `\"[\"`, `nameAttribute`, `genreAttribute`, `membersAttribute`, and finally a `\"]\"`.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6771,7 +6998,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT represent an object as a string with the toString method"
+   "learningObjectives": "SWBAT represent an object as a string with the toString method",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6786,7 +7016,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\n\n```\n\n* ",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6820,7 +7049,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a list of objects"
+   "learningObjectives": "SWBAT create a list of objects",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6835,7 +7067,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\nclass Book {\n  private String title;\n  private String author;\n  private String genre;\n  \n  public Book(String t, String a, String g) {\n    title = t;\n    author = a;\n    genre = g;\n  }\n  \n  public String getTitle() {\n    return title;\n  }\n  \n  public String getAuthor() {\n    return author;\n  }\n  \n  public String getGenre() {\n    return genre;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[title=\" + title + \", author=\" + author + \", genre=\" + genre + \"]\";\n  }\n}\n```\n\nIn the `Library.java` file, you can see references to the getter methods for three string attributes needed for the `Book` class. The method `getTitle()` is referenced on line 51, the method `getAuthor()` is referenced on line 64, and the method `getGenre` is referenced on lines 85 and 98. You should create `private` attributes for `name`, `author`, and `genre`. Getters also need to be created for each attribute.\n\nWhen you print a ArrayList of `Book` objects and you want to a string representation, you need to override the `toString` method.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6881,7 +7112,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create a component class"
+   "learningObjectives": "SWBAT create a component class",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -6896,7 +7130,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "### ShoppingCart Class\nHere is one possible solution for the `ShoppingCart` class:\n\n```java\nimport java.util.*;\n\nclass ShoppingCart {\n  private ArrayList<Item> items;\n  private double total;\n  \n  public ShoppingCart() {\n    items = new ArrayList<Item>();\n    total = 0;\n  }\n  \n  public void addItem(Item item) {\n    items.add(item);\n    calculateTotal();\n  }\n  \n  private void calculateTotal() {\n    total = 0;\n    for (Item i : items) {\n      i.calculateSubtotal();\n      total += i.getSubtotal();\n    }\n  }\n  \n  public double getTotal() {\n    return total;\n  }\n  \n  public int getNumItems() {\n    int numItems = 0;\n    for (Item i : items) {\n      numItems += i.getQuantity();\n    }\n    return numItems;\n  }\n  \n  public ArrayList<Item> getItems() {\n    return items;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[items=\" + items + \", total=\" + total + \"]\";\n  }\n}\n```\n\n* Don't forget to call `calculateTotal` every time an item is added to the cart.\n* In `calculateTotal` the total for the shopping cart should be updated. So set `total` to 0. Then add up the `subtotal` for each item item in the cart and set this value to `total`.\n* The number of items in the cart is not the length of the ArrayList; that would be how many different kinds of objects are in the shopping cart. We want to know to total number of items in the cart. Sum of the `quantity` attributes for all of the items.\n\n### Item Class\nHere is one possible solution for the `Item` class:\n\n```java\nclass Item {\n  private String name;\n  private double price;\n  private int quantity;\n  private double subtotal;\n  \n  public Item(String n, double p, int q) {\n    name = n;\n    price = p;\n    quantity = q;\n    subtotal = 0;\n  }\n  \n  public int getQuantity() {\n    return quantity;\n  }\n  \n  public void calculateSubtotal() {\n    subtotal = price * quantity;\n  }\n  \n  public double getSubtotal() {\n    return subtotal;\n  }\n  \n  public String toString() {\n    return getClass().getName() + \"[name=\" + name + \", price=\" + price + \", quantity=\" + quantity + \", subtotal=\" + subtotal + \"]\";\n  }\n}\n```\n\n* Since we need to see a string representation of `Item` objects, the `toString` method should be overriden.\n* There also needs to be getter methods for the `subtotal` and `quantity` attributes.",
-   "showGuidanceAfterResponse": false,
    "points": 20,
    "oneTimeTest": false,
    "metadata": {
@@ -6942,7 +7175,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create component and composite classes"
+   "learningObjectives": "SWBAT create component and composite classes",
+   "showGuidanceAfterResponseOption": {
+    "type": "Never"
+   }
   }
  },
  {
@@ -6957,7 +7193,6 @@
    "arePartialPointsAllowed": true,
    "timeoutSeconds": 300,
    "guidance": "Here is one possible solution:\n\n```java\ninterface Vehicle {\n  String travel();\n}\n\n//add class definitions below this line\n\nclass Car implements Vehicle {\n  private double miles;\n  \n  public Car(double m) {\n    miles = m;\n  }\n  \n  public String travel() {\n    return String.format(\"There is no extra feel to travel %.2f miles.\", miles);\n  }\n}\n\nclass RideShare implements Vehicle {\n  private double miles;\n  private double fee;\n  \n  public RideShare(double m, double f) {\n    miles = m;\n    fee = f;\n  }\n  \n  public String travel() {\n    return String.format(\"It costs $%.2f to travel %.2f miles.\", (fee * miles), miles);\n  }\n}\n\nclass Subway implements Vehicle {\n  private double fare;\n  \n  public Subway(double f) {\n    fare = f;\n  }\n  \n  public String travel() {\n    return String.format(\"$%.2f will get you unlimited use for one day.\", fare);\n  }\n}\n \n//add class definitions above this line\n\npublic class Exercise1 {  \n  public static void main(String[] args) {\n    \n    //add code below this line\n\n    Car c = new Car(10);\n    RideShare rc = new RideShare(20, 0.5);\n    Subway s = new Subway(7.25);\n    \n    System.out.println(c.travel());\n    System.out.println(rc.travel());\n    System.out.println(s.travel());\n\n    //add code above this line\n    \n  }\n}\n```\n\n### Car Class\n* Implement the `Vehicle` interface.\n* Create the `miles` attribute that is of type `double`.\n* Override the `travel` method so that it prints the message with the `miles` attribute.\n* Use `%.2f` to ensure `miles` prints with two decimal places.\n\n### RideShare Class\n* Implement the `Vehicle` interface.\n* Create attributes for `miles` and `fee`. Both are doubles.\n* Override the `travel` method so that it prints a message along with `miles * fee` and `miles`.\n* Use `%.2f` to ensure `miles` prints with two decimal places.\n\n### Subway Class\n* Implement the `Vehicle` interface.\n* Create the `fare` attribute of type `double`.\n* Override the `travel` method so that it prints a message along with `fare`.\n* Use `%.2f` to ensure `miles` prints with two decimal places.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -6991,7 +7226,10 @@
     ]
    },
    "bloomsObjectiveLevel": "6",
-   "learningObjectives": "SWBAT create several classes that all inherit from the same interface"
+   "learningObjectives": "SWBAT create several classes that all inherit from the same interface",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -7026,7 +7264,6 @@
     }
    ],
    "guidance": "Both files must be in the same folder and they must both be compiled. Once this happens, Java can use a user-defined class in another file.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -7060,7 +7297,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT describe how Java is able to use code written in a separate file"
+   "learningObjectives": "SWBAT describe how Java is able to use code written in a separate file",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -7090,7 +7330,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n`cats[0].meow();`\n\nRemember, `cats` is an array of objects. You cannot call the `meow` method on an array of `Cat` objects. You need to call the method on a `Cat` object itself. `cats[0]` is a `Cat` object, the other choices are not.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -7124,7 +7363,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT to reference an object in an array of objects"
+   "learningObjectives": "SWBAT to reference an object in an array of objects",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -7138,7 +7380,6 @@
    "text": "The <<<Animation>>> class is the composite class.\nThe <<<Shape>>> class is the component class.",
    "distractors": "",
    "guidance": "A composite class is a class that has another class as an attribute. A component class is a class that is used as an attribute of another class. In the code sample above, the `Animation` class is the composite class, while the `Shape` class is the component class.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "arePartialPointsAllowed": true,
@@ -7185,6 +7426,9 @@
      " class is the component class."
     ],
     "regexPositions": []
+   },
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
    }
   }
  },
@@ -7199,7 +7443,6 @@
    "options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":50,\"lang\":\"en\",\"trashId\":\"sortableTrash\"}",
    "grader": "1",
    "guidance": "The correct answer is:\n\n```java\ninterface Cat {\n  String meow();\n  String sleep();\n}\n```\n\n* Interfaces do not use the keyword `abstract`.\n* Interface methods are designed to be used by subclasses. They are `public` by default and to not need an access modifier.\n* Interface methods are empty. They do not need curly brackets `{` when defining a method without code.",
-   "showGuidanceAfterResponse": true,
    "points": 20,
    "oneTimeTest": true,
    "metadata": {
@@ -7231,7 +7474,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT define an interface"
+   "learningObjectives": "SWBAT define an interface",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -7266,7 +7512,6 @@
     }
    ],
    "guidance": "The correct answer is:\n\n```java\npublic boolean equals(Alpha other) {\n  return number == other.number;\n}\n```\n\n* The `equals` method requires an argument of another `Alpha` object.\n* The `equals` method should return a boolean value.\n* Use `other.number` to represent the `number` attribute from the other `Alpha` object.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -7300,7 +7545,10 @@
     ]
    },
    "bloomsObjectiveLevel": "2",
-   "learningObjectives": "SWBAT override the equals method to compare two attributes between objects"
+   "learningObjectives": "SWBAT override the equals method to compare two attributes between objects",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  },
  {
@@ -7330,7 +7578,6 @@
     }
    ],
    "guidance": "Using `getClass().getName()` allows a subclass to print the proper class name. This means you do not have to override the `toString` method for the subclass.",
-   "showGuidanceAfterResponse": true,
    "showExpectedAnswer": true,
    "points": 20,
    "incorrectPoints": 0,
@@ -7364,7 +7611,10 @@
     ]
    },
    "bloomsObjectiveLevel": "1",
-   "learningObjectives": "SWBAT explain the benefit of using getClass().getName()"
+   "learningObjectives": "SWBAT explain the benefit of using getClass().getName()",
+   "showGuidanceAfterResponseOption": {
+    "type": "Always"
+   }
   }
  }
 ]
